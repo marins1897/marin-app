@@ -1,5 +1,6 @@
-import { useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router';
 import { ChapterRail } from '@/components/domain/chapter-rail';
 import { CoachCard } from '@/components/domain/coach-card';
 import { FullTimePanel } from '@/components/domain/full-time-panel';
@@ -18,6 +19,7 @@ import {
   chapterStop,
   isSameStage,
   stageAt,
+  stopForHash,
   type Chapter,
 } from './lib/stage';
 import { useStageNavigation } from './lib/use-stage-navigation';
@@ -50,6 +52,22 @@ export const MatchdayHero = () => {
     isSameStage,
   );
   const goTo = useStageNavigation(trackRef);
+  const { hash, pathname, search } = useLocation();
+
+  // Return links (`/#player-<slug>`, `/#squad`) land back where the visitor
+  // left; the hash is then dropped so a refresh does not jump again.
+  useEffect(() => {
+    const stop = stopForHash(
+      hash,
+      introOrder.map((player) => player.slug),
+    );
+    if (!stop) return;
+    const frame = window.requestAnimationFrame(() => {
+      goTo(stop, { isInstant: true });
+      window.history.replaceState(window.history.state, '', pathname + search);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [goTo, hash, pathname, search]);
   const isHydrated = useIsHydrated();
   const copy = useMemo(() => buildStadiumCopy(t, ts, introOrder), [t, ts]);
   const focus = useMemo(() => focusFor(stage), [stage]);

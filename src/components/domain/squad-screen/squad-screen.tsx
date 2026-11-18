@@ -46,6 +46,7 @@ export const SquadScreen = ({
           <li key={player.slug}>
             <Link
               to={localize(playerPath(player.slug))}
+              state={{ from: 'squad' }}
               className={cx(styles.player, player.isCaptain && styles.captain)}
             >
               <span className={styles.number}>{player.number}</span>

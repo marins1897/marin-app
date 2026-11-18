@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Link, useParams } from 'react-router';
+import { Link, useLocation, useParams } from 'react-router';
 import { ChipList } from '@/components/ui/chip-list';
 import { Container } from '@/components/ui/container';
 import { LinkButton } from '@/components/ui/link-button';
@@ -10,6 +10,7 @@ import { Tag } from '@/components/ui/tag';
 import { VisuallyHidden } from '@/components/ui/visually-hidden';
 import { POSITION_LABEL, findPlayer, startingXi } from '@/content/squad';
 import { playerPath } from '@/content/squad-slugs';
+import { playerHash } from '@/components/domain/matchday-hero/lib/stage';
 import { useLocalizedPath } from '@/hooks/use-locale';
 import { registerNamespace } from '@/i18n/i18n';
 import scout from '@/i18n/locales/en/scout.json';
@@ -32,6 +33,8 @@ export default function ProjectPage() {
   const { t } = useTranslation('squad');
   const { t: ts } = useTranslation('scout');
   const localize = useLocalizedPath();
+  const cameFromSquad =
+    (useLocation().state as { from?: string } | null)?.from === 'squad';
   const player = findPlayer(slug);
   if (!player) return <NotFoundContent />;
 
@@ -52,7 +55,12 @@ export default function ProjectPage() {
   return (
     <article className={styles.page}>
       <Container>
-        <Link to={localize('/')} className={styles.back}>
+        <Link
+          to={localize(
+            `/#${cameFromSquad ? 'squad' : playerHash(player.slug)}`,
+          )}
+          className={styles.back}
+        >
           ← {ts('page.back')}
         </Link>
 

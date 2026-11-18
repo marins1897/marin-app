@@ -5,6 +5,7 @@
 }
 
 .canvas {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
@@ -18,15 +19,63 @@
   opacity: 0;
 }
 
+// The drawn tunnel shows while the 3D loads, then fades out under the canvas.
+.backdrop {
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity var(--duration-panel) var(--ease-out)
+      var(--duration-panel);
+  }
+}
+
+.scene[data-status='ready'] .backdrop {
+  opacity: 0;
+}
+
+// Bottom-right, clear of the chapter rail.
 .status {
   position: absolute;
-  bottom: var(--space-8);
-  left: 50%;
-  font-family: var(--font-display);
-  font-size: var(--text-base);
+  right: var(--gutter);
+  bottom: var(--space-5);
+  display: grid;
+  gap: var(--space-2);
+  justify-items: end;
+  max-width: min(22rem, calc(100% - 2 * var(--gutter)));
+  font-family: var(--font-label);
+  font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--color-text-faint);
+  color: var(--color-text-muted);
+  text-align: right;
   text-transform: uppercase;
   letter-spacing: var(--tracking-label);
-  translate: -50% 0;
+}
+
+.bar {
+  position: relative;
+  width: 8rem;
+  height: 3px;
+  overflow: hidden;
+  background-color: var(--color-track);
+
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background-color: var(--color-brand);
+    transform: scaleX(0.35);
+    transform-origin: left;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: sweep 1.2s var(--ease-standard) infinite;
+    }
+  }
+}
+
+@keyframes sweep {
+  from {
+    translate: -100% 0;
+  }
+
+  to {
+    translate: 300% 0;
+  }
 }

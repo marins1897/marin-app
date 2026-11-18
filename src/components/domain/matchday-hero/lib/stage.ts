@@ -98,3 +98,24 @@ export const stepFrom = (
     : [...STOPS]
         .reverse()
         .find((candidate) => candidate.at < progress - EPSILON);
+
+/** The URL hash that brings a visitor back to a player's close-up. */
+export const playerHash = (slug: string): string => `player-${slug}`;
+
+/**
+ * The stop a URL hash points at: `#player-<slug>` (a close-up), or a chapter
+ * id such as `#squad`. `playerSlugs` is the walk-out's introduction order.
+ */
+export const stopForHash = (
+  hash: string,
+  playerSlugs: readonly string[],
+): Stop | undefined => {
+  const id = hash.replace(/^#/, '');
+  if (id.startsWith('player-')) {
+    const index = playerSlugs.indexOf(id.slice('player-'.length));
+    return STOPS.find((stop) => stop.playerIndex === index && index >= 0);
+  }
+  return CHAPTERS.some((chapter) => chapter === id)
+    ? chapterStop(id as Chapter)
+    : undefined;
+};

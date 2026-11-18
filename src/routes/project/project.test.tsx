@@ -6,7 +6,7 @@ import ProjectPage, { meta } from './project';
 
 type MetaArgs = Parameters<typeof meta>[0];
 
-const renderAt = (path: string) =>
+const renderAt = (path: string | { pathname: string; state?: unknown }) =>
   renderWithProviders(
     <Routes>
       <Route path="/projects/:slug" element={<ProjectPage />} />
@@ -64,6 +64,28 @@ describe('project route', () => {
         rel: 'canonical',
         href: 'https://marin-iota.vercel.app/projects/e-sljedivost',
       });
+    });
+  });
+
+  describe('given the visitor wants to go back', () => {
+    it('when the report was opened from a player, then "back" returns to that player in the walk-out', () => {
+      // Given / When
+      renderAt('/projects/cryptotoday');
+
+      // Then
+      expect(
+        screen.getByRole('link', { name: /Back to the squad/ }),
+      ).toHaveAttribute('href', '/#player-cryptotoday');
+    });
+
+    it('when the report was opened from the squad screen, then "back" returns to the squad screen', () => {
+      // Given / When
+      renderAt({ pathname: '/projects/cryptotoday', state: { from: 'squad' } });
+
+      // Then
+      expect(
+        screen.getByRole('link', { name: /Back to the squad/ }),
+      ).toHaveAttribute('href', '/#squad');
     });
   });
 });

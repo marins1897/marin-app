@@ -3,7 +3,14 @@ import {
   TIMELINE,
   introStart,
 } from '@/components/domain/stadium-scene/lib/timeline';
-import { STOPS, chapterStop, isSameStage, stageAt, stepFrom } from './stage';
+import {
+  STOPS,
+  chapterStop,
+  isSameStage,
+  stageAt,
+  stepFrom,
+  stopForHash,
+} from './stage';
 
 describe('stageAt', () => {
   describe('given the walk-out from top to bottom', () => {
@@ -108,6 +115,26 @@ describe('stops', () => {
       expect(stepFrom(0, -1)).toBeUndefined();
       expect(stepFrom(1, 1)).toBeUndefined();
       expect(chapterStop('intros').playerIndex).toBe(0);
+    });
+  });
+});
+
+describe('stopForHash', () => {
+  describe('given return links', () => {
+    it('when read, then a player hash lands on his close-up, a chapter hash on the chapter, anything else nowhere', () => {
+      // Given
+      const slugs = ['first', 'second', 'third'];
+
+      // When
+      const player = stopForHash('#player-second', slugs);
+      const squad = stopForHash('#squad', slugs);
+
+      // Then
+      expect(player?.playerIndex).toBe(1);
+      expect(squad?.chapter).toBe('squad');
+      expect(stopForHash('#player-nobody', slugs)).toBeUndefined();
+      expect(stopForHash('#profile', slugs)).toBeUndefined();
+      expect(stopForHash('', slugs)).toBeUndefined();
     });
   });
 });

@@ -7,8 +7,8 @@ import { MemoryRouter } from 'react-router';
 import type { ReactElement, ReactNode } from 'react';
 
 export interface ProviderOptions {
-  /** Initial router location. */
-  route?: string;
+  /** Initial router location: a path, or a path with navigation state. */
+  route?: string | { pathname: string; state?: unknown };
 }
 
 /**

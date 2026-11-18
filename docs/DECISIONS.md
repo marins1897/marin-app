@@ -194,8 +194,10 @@ The scene chunk is ~146 kB gzip (November 2026, after the realism pass in
 must pay for themselves. It is imported dynamically after the page is
 idle, so it never touches the initial-JS budget, LCP or TBT of the prerendered
 text. It gets its own 150 kB budget in `scripts/check-bundle-size.ts`; every
-other lazy chunk keeps the 60 kB limit. Without WebGL the hero still works on
-its plain background and the copy is identical.
+other lazy chunk keeps the 60 kB limit. While the chunk loads, and without
+WebGL, `TunnelBackdrop` (an inline SVG of the tunnel, in the prerendered HTML)
+stands in; its lamps switch on one by one while loading and the 3D canvas
+fades in over it. The copy is identical either way.
 
 ## 15. Projects as a starting XI
 
@@ -256,7 +258,10 @@ Navigation reads the same timeline: `STOPS` in `matchday-hero/lib/stage.ts`
 lists every place the walk-out rests (each chapter, each player's hold). The
 chapter rail's buttons and the tunnel's "Skip to the squad" link jump to a
 stop, and ← / → step between stops while the stadium is on screen. The skip
-link is a real `#squad` anchor, so it also works without JavaScript.
+link is a real `#squad` anchor, so it also works without JavaScript. Scout
+reports link back to where the visitor left: `/#player-<slug>` (or `/#squad`
+when opened from the squad screen, via router state); the hero maps the hash
+to its stop with `stopForHash`, jumps there instantly and drops the hash.
 
 ## 18. Realism pass on the scene
 

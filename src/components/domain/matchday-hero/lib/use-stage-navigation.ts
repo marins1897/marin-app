@@ -16,15 +16,16 @@ const isTyping = (target: EventTarget | null) =>
 /**
  * Jumps through the walk-out: `goTo(stop)` scrolls the track to a stop, and
  * ← / → step to the previous / next stop while the stadium is on screen.
- * Returns `goTo` for the chapter rail and the skip link.
+ * Returns `goTo` for the chapter rail, the skip link and return links
+ * (`isInstant` jumps without scrolling through the whole walk-out).
  */
 export const useStageNavigation = (
   trackRef: RefObject<HTMLElement | null>,
-): ((stop: Stop) => void) => {
+): ((stop: Stop, options?: { isInstant?: boolean }) => void) => {
   const headingRef = useRef<{ at: number; until: number } | null>(null);
 
   const goTo = useCallback(
-    (target: Stop) => {
+    (target: Stop, { isInstant = false }: { isInstant?: boolean } = {}) => {
       const track = trackRef.current;
       if (!track) return;
       const scrollable = track.offsetHeight - window.innerHeight;
@@ -38,7 +39,7 @@ export const useStageNavigation = (
       };
       window.scrollTo({
         top,
-        behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+        behavior: isInstant || prefersReducedMotion() ? 'auto' : 'smooth',
       });
     },
     [trackRef],

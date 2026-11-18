@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type RefObject } from 'react';
 import { useTranslation } from 'react-i18next';
+import { TunnelBackdrop } from '@/components/domain/tunnel-backdrop';
 import { cx } from '@/utils/class-names';
 import styles from './stadium-scene.module.scss';
 import type {
@@ -89,10 +90,17 @@ export const StadiumScene = ({
 
   return (
     <div className={cx(styles.scene, className)} data-status={status}>
+      <TunnelBackdrop
+        className={styles.backdrop}
+        isLoading={status === 'loading'}
+      />
       <canvas ref={canvasRef} className={styles.canvas} aria-hidden="true" />
       {status !== 'ready' && (
         <p className={styles.status} role="status">
           {status === 'loading' ? t('scene.loading') : t('scene.unavailable')}
+          {status === 'loading' && (
+            <span className={styles.bar} aria-hidden="true" />
+          )}
         </p>
       )}
     </div>
