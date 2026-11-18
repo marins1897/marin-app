@@ -1,0 +1,13 @@
+.main {
+  flex: 1;
+  outline: none;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: calc(var(--container-max) * 0.66);
+  padding: var(--space-10) var(--gutter);
+  margin-inline: auto;
+}

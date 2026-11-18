@@ -1,0 +1,25 @@
+.panel {
+  position: relative;
+  padding: var(--space-5);
+  overflow: hidden;
+  color: var(--color-text);
+  background-color: var(--color-card);
+  isolation: isolate;
+}
+
+.top {
+  border-top: var(--edge) solid var(--color-brand);
+}
+
+.left {
+  border-left: var(--edge) solid var(--color-accent);
+}
+
+.textured::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: '';
+  background: var(--pattern-stripes);
+}

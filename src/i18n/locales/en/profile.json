@@ -1,0 +1,75 @@
+{
+  "kicker": "Coach profile",
+  "title": "About me",
+  "about": [
+    "I'm a fullstack developer from Sinj, Croatia, with 4+ years building blockchain products end to end: React and TypeScript frontends, Node.js and GraphQL backends, Solidity and Hyperledger contracts, and the AWS infrastructure underneath.",
+    "At Puffer I own frontend engineering across the product suite, from the restaking dApp to the puffer.fi rebrand, and I build the team's AI tooling: MCP services, RAG pipelines and an eight-agent engineering system.",
+    "Off the clock I build for my local football community: a club platform for NK OSK Otok and the Amo na Čanj festival site that ran 130 teams across five sports."
+  ],
+  "facts": {
+    "label": "Quick facts",
+    "basedLabel": "Based in",
+    "based": "Sinj, Croatia · remote",
+    "experienceLabel": "Experience",
+    "experience": "4+ years",
+    "educationLabel": "Education",
+    "education": "Master's in Electrical Engineering, University of Split"
+  },
+  "careerTitle": "Transfer history",
+  "present": "Present",
+  "career": {
+    "puffer": {
+      "club": "Puffer",
+      "role": "Fullstack Blockchain Developer",
+      "place": "Remote · full-time",
+      "points": [
+        "Owned frontend engineering across the product suite: the restaking dApp that handles deposits and withdrawals, the puffer.fi rebrand and the cross-chain interop app, on an architecture, design system and quality standards I set.",
+        "Built the backend layer to the chain (BFF API, referral services, Telegram bot, a withdrawal-credential verifier gating validator registration) and the AI tooling: MCP services, RAG pipelines and an eight-agent engineering system."
+      ]
+    },
+    "reneverse": {
+      "club": "ReneVerse",
+      "role": "Fullstack Blockchain Developer",
+      "place": "Remote · full-time",
+      "points": [
+        "Built the backend and on-chain infrastructure for Smart Ads, an in-game advertising platform: GraphQL APIs, microservices and event-driven AWS serverless pipelines for high-volume ad events.",
+        "Wrote the Solidity contracts for on-chain ad verification and wired them end to end into the React and Next.js frontend."
+      ]
+    },
+    "cryptotoday": {
+      "club": "CryptoToday",
+      "role": "Backend Developer",
+      "place": "Remote · part-time",
+      "points": [
+        "Built the backend for a community platform for crypto listings and token-based voting: REST APIs, the PostgreSQL schema, voting logic and on-chain deposit and reward flows.",
+        "Ran the AWS infrastructure and automated the data aggregation with scheduled jobs and materialised views."
+      ]
+    },
+    "cs-computer-systems": {
+      "club": "CS Computer Systems",
+      "role": "Frontend Blockchain Developer",
+      "place": "Zagreb · hybrid",
+      "points": [
+        "Built the frontends for two enterprise blockchain platforms used by hospitals and government: MediioChain for healthcare data exchange and e-Sljedivost, Croatia's food traceability portal.",
+        "Delivered React dashboards with real-time d3.js analytics, a React Native app, and chaincode in Go for Hyperledger Fabric."
+      ]
+    },
+    "mps-data": {
+      "club": "MPS Data",
+      "role": "Football Analyst",
+      "place": "Remote · student job",
+      "points": [
+        "Before the code: live and recorded match analysis and structured scouting reports for player profiling."
+      ]
+    }
+  },
+  "skillsTitle": "Skills",
+  "skills": {
+    "frontend": "Frontend",
+    "web3": "Web3",
+    "backend": "Backend & cloud",
+    "ai": "AI engineering",
+    "quality": "Testing & quality"
+  },
+  "stackLabel": "Stack at {{club}}"
+}

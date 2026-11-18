@@ -1,0 +1,27 @@
+// Raw palette as custom properties. Reference these ONLY from tokens.scss;
+// components use the semantic tokens defined there (Stylelint enforces it).
+// Scale: 05 lightest → 95 darkest. Night-stadium navy with Volt: acid lime
+// and electric blue.
+
+:root {
+  --primary-navy-30: rgb(166 184 230);
+  --primary-navy-50: rgb(42 72 160);
+  --primary-navy-70: rgb(20 40 96);
+  --primary-navy-80: rgb(14 28 66);
+  --primary-navy-90: rgb(9 18 42);
+  --primary-navy-95: rgb(5 11 28);
+  --primary-volt-50: rgb(212 255 31);
+  --primary-volt-95: rgb(11 13 2);
+  --primary-electric-50: rgb(52 99 245);
+  --neutral-card-95: rgb(10 12 18);
+  --secondary-mist-05: rgb(244 247 252);
+  --secondary-mist-30: rgb(201 214 255);
+  --secondary-red-50: rgb(255 59 79);
+  --secondary-green-50: rgb(57 227 127);
+  --system-white: rgb(255 255 255);
+  --system-white-70: rgb(255 255 255 / 70%);
+  --system-white-35: rgb(255 255 255 / 35%);
+  --system-white-22: rgb(255 255 255 / 22%);
+  --system-white-14: rgb(255 255 255 / 14%);
+  --system-black-55: rgb(2 5 14 / 55%);
+}

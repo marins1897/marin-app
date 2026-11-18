@@ -1,0 +1,209 @@
+{
+  "team": {
+    "name": "Inter Faces",
+    "formation": "4-3-3",
+    "startingXi": "Prvih jedanaest",
+    "matchday": "Dan utakmice 2026",
+    "bench": "Klupa",
+    "captain": "Kapetan",
+    "captainShort": "K",
+    "scoutReport": "Skautski izvještaj",
+    "squadTitle": "Momčad",
+    "squadLead": "Glavni trener Marin Samardžić odabrao je jedanaest projekata, svaki na poziciji koja odgovara onome što jest. Otvori bilo kojeg igrača za cijeli skautski izvještaj.",
+    "why": "Zašto {{position}}:",
+    "progress": "Igrač {{current}} od {{total}}",
+    "board": "PRVIH JEDANAEST · INTER FACES · 4-3-3 · GLAVNI TRENER MARIN SAMARDŽIĆ",
+    "stack": "Tehnologije",
+    "coach": "Glavni trener",
+    "coachName": "Marin Samardžić"
+  },
+  "positions": {
+    "GK": "vratar",
+    "RB": "desni bek",
+    "CB": "stoper",
+    "LB": "lijevi bek",
+    "DM": "zadnji vezni",
+    "CM": "središnji vezni",
+    "RW": "desno krilo",
+    "ST": "napadač",
+    "LW": "lijevo krilo"
+  },
+  "players": {
+    "e-sljedivost": {
+      "title": "e-Sljedivost",
+      "club": "CS Computer Systems",
+      "period": "2022 – 2024",
+      "about": "Hrvatski javni portal za sljedivost hrane: skeniraj QR kod proizvoda i prati ga unatrag kroz opskrbni lanac.",
+      "why": "posljednja linija povjerenja. Hrvatski javni portal za sljedivost hrane, gdje svaki zapis o proizvodu živi na blockchainu.",
+      "stats": {
+        "client": "državni projekt",
+        "lookup": "pretraga proizvoda",
+        "ledger": "Hyperledger"
+      },
+      "imageAlt": "Javni portal e-Sljedivost: skeniraj QR kod ili unesi ID proizvoda",
+      "values": {
+        "client": "RH"
+      }
+    },
+    "cross-chain-interop": {
+      "title": "Cross-chain interop",
+      "club": "Puffer",
+      "period": "2026",
+      "about": "Cross-chain supply, borrow i flash-loan tokovi na Puffer UniFi: jedna namjera, jedan potpis, izvršenje na L1 i L2.",
+      "why": "spaja dvije polovice terena: jedna potpisana namjera, izvršena na L1 i L2.",
+      "stats": {
+        "flows": "toka",
+        "eip": "EIP",
+        "chains": "mreže"
+      },
+      "imageAlt": "Cross-chain interop aplikacija: jedna namjera, oba lanca, s tokovima Supply, Borrow i Flashloan"
+    },
+    "ai-agents": {
+      "title": "8 AI agenata",
+      "club": "Vlastiti alati",
+      "period": "2026",
+      "about": "Osam inženjerskih agenata temeljenih na Claudeu za code review, sigurnosna skeniranja, audite i pripremu releasea. Osmislio sam ih i izgradio.",
+      "why": "brane codebase: review, sigurnosna skeniranja i auditi prije nego išta ode van.",
+      "stats": {
+        "agents": "agenata",
+        "skills": "skillova",
+        "pushes": "pushova bez reviewa"
+      },
+      "imageAlt": ""
+    },
+    "reneverse": {
+      "title": "ReneVerse",
+      "club": "ReneVerse",
+      "period": "2024 – 2025",
+      "about": "Smart Ads, platforma za oglašavanje unutar igara. Izgradio sam backend i on-chain dio.",
+      "why": "čvrsti backend: serverless pipelineovi i ugovori na kojima se vrte oglasi.",
+      "stats": {
+        "serverless": "serverless",
+        "apis": "API-ji",
+        "contracts": "ugovori"
+      },
+      "imageAlt": "Web stranica ReneVersea koja predstavlja Smart Ads za oglašavanje unutar igara"
+    },
+    "cryptotoday": {
+      "title": "CryptoToday",
+      "club": "CryptoToday",
+      "period": "2024",
+      "about": "Platforma na kojoj kripto projekti ulaze na listu glasovima zajednice, a ne plaćenim mjestom. Izgradio sam backend.",
+      "why": "backend koji odlučuje što ulazi na listu: glasovi, depoziti i nagrade.",
+      "stats": {
+        "api": "API",
+        "database": "PostgreSQL",
+        "infra": "infrastruktura"
+      },
+      "imageAlt": "Početna stranica CryptoToday: kripto listinzi po glasovima zajednice"
+    },
+    "puffer-app": {
+      "title": "Puffer aplikacija",
+      "club": "Puffer",
+      "period": "2025 –",
+      "about": "Puffer aplikacija za liquid restaking: uloži ETH, dobij pufETH i upravljaj vaultovima i povlačenjima.",
+      "why": "drži vezni red i novac: dApp u kojem korisnici ulažu.",
+      "stats": {
+        "staked": "staking",
+        "token": "potvrdni token",
+        "kind": "web3 aplikacija"
+      },
+      "imageAlt": "Puffer aplikacija za staking: uplati ETH i dobij pufETH"
+    },
+    "playgrnd": {
+      "title": "PLAYGRND",
+      "club": "Suradnik",
+      "period": "2026 –",
+      "about": "Hrvatska platforma za amaterski nogomet: raspored, rezultati uživo i statistika igrača. Radim na frontendu, integracijama i AI-ju.",
+      "why": "brzina po krilu: živi proizvod s tisućama igrača svaki tjedan.",
+      "stats": {
+        "players": "igrača",
+        "teams": "ekipa",
+        "matches": "utakmica"
+      },
+      "imageAlt": "PLAYGRND: današnje amaterske utakmice, istaknuti igrači i statistika platforme"
+    },
+    "amo-na-canj": {
+      "title": "Amo na Čanj",
+      "club": "Sporedni projekt · suorganizator",
+      "period": "2026",
+      "about": "Dvodnevni ljetni sportski festival uz rijeku Cetinu. Bio sam suorganizator i izgradio platformu iza njega.",
+      "why": "box-to-box: organizirao sam festival i izgradio platformu na kojoj se odvijao.",
+      "stats": {
+        "teams": "ekipa",
+        "sports": "sportova",
+        "days": "dana"
+      },
+      "imageAlt": "Web stranica festivala Amo na Čanj"
+    },
+    "puffer-fi": {
+      "title": "puffer.fi",
+      "club": "Puffer",
+      "period": "2026",
+      "about": "Rebrendirana stranica puffer.fi, izgrađena od nule i prerenderirana za brzinu i SEO.",
+      "why": "onaj kojeg svi vide: javno lice tvrtke, izgrađeno od nule.",
+      "stats": {
+        "staging": "do staginga",
+        "tests": "testova",
+        "rendering": "prerenderirano"
+      },
+      "imageAlt": "Početna stranica puffer.fi",
+      "values": {
+        "staging": "6 tj."
+      }
+    },
+    "nk-osk-otok": {
+      "title": "NK OSK Otok",
+      "club": "Sporedni projekt · klupska platforma",
+      "period": "2026 –",
+      "about": "Cjelovit digitalni dom hrvatskog nogometnog kluba, napajan podacima saveza uživo i izgrađen od početka do kraja.",
+      "why": "moj najcjelovitiji proizvod, od data pipelinea preko dizajna do CMS-a, za pravi klub, od početka do kraja.",
+      "stats": {
+        "matches": "utakmica",
+        "squads": "selekcija",
+        "tests": "testova"
+      },
+      "imageAlt": "Centar utakmice NK OSK Otok: usporedba na tablici, rezultat uživo i statistika utakmice"
+    },
+    "this-portfolio": {
+      "title": "Ovaj portfolio",
+      "club": "Novo pojačanje",
+      "period": "2026",
+      "about": "Ova stranica: izlazak na teren 3D stadiona uz skrolanje, a svaka riječ je prerenderirana.",
+      "why": "novo pojačanje: 3D stadion na kojem upravo stojiš.",
+      "stats": {
+        "stadium": "stadion",
+        "players": "igrača",
+        "cookies": "kolačića"
+      },
+      "imageAlt": "Ovaj portfolio: sastav Inter Facesa uz postavu 4-3-3 u osvijetljenom 3D stadionu"
+    }
+  },
+  "bench": {
+    "ap2-agent-payments": {
+      "title": "AP2 agentska plaćanja",
+      "tag": "Puffer",
+      "summary": "Demo AI agenata koji plaćaju na Puffer UniFi: ponavljajuća x402 plaćanja i automatizirana kupnja."
+    },
+    "azra-player": {
+      "title": "Azra glazbeni player",
+      "tag": "Akademija",
+      "summary": "Rani web glazbeni player za grupu Azra, i dalje online."
+    },
+    "telegram-mini-app": {
+      "title": "Telegram mini aplikacija",
+      "tag": "Puffer",
+      "summary": "Puffer unutar Telegrama."
+    },
+    "mediiochain": {
+      "title": "MediioChain",
+      "tag": "CS Computer Systems",
+      "summary": "Razmjena zdravstvenih podataka na blockchainu."
+    },
+    "kavana-quiz": {
+      "title": "Kavana kviz",
+      "tag": "Sporedni projekt",
+      "summary": "Arhiva i alat za izradu pub kvizova."
+    }
+  }
+}

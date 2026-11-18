@@ -1,0 +1,125 @@
+{
+  "players": {
+    "e-sljedivost": {
+      "summary": "Javni državni portal na kojem svatko može skenirati QR kod proizvoda ili upisati njegov ID i pratiti hranu unatrag kroz opskrbni lanac.",
+      "points": [
+        "Izradio sam React i Material UI sučelja za praćenje i analitiku, s d3.js grafovima za proizvođače, inspektore i javnost.",
+        "Povezao sam sučelje s Hyperledger Fabric mrežom preko Node.js endpointa koji drže ekrane usklađene s ledgerom.",
+        "Napisao sam chaincode u Go-u za zapise koje portal čita."
+      ],
+      "role": "Frontend developer",
+      "link": "esljedivost.mps.hr"
+    },
+    "cross-chain-interop": {
+      "summary": "Atomski cross-chain supply, borrow i flash-loan tokovi na Puffer UniFi: jedna namjera, jedan potpis, izvršenje na L1 i L2 uz EIP-7702.",
+      "points": [
+        "Redizajnirao sam cijelu aplikaciju prema novom Puffer brendu, bez posebnog dizajnera.",
+        "Izgradio sam zajednički UI kit i komponente tokova, a logika svakog transakcijskog toka ostala je identična do bajta.",
+        "Toast prikaz iz biblioteke zamijenio sam providerom na razini aplikacije, pa su statusne poruke jasne u svakom koraku."
+      ],
+      "role": "Redizajn i izrada frontenda",
+      "link": "Demo uživo"
+    },
+    "ai-agents": {
+      "summary": "Osam inženjerskih agenata na Claudeu, s vlastitim skillovima za code review, sigurnosna skeniranja, audite ovisnosti i performansi te pripremu releasea.",
+      "points": [
+        "Napisao sam jedanaest vlastitih skillova, od PR reviewa i sigurnosnih checklista do SEO i performance audita te isporuke promjena.",
+        "Svaki agent radi u sandboxu s ograničenjem vremena i broja koraka, a sustav ima satni backup s testiranim vraćanjem.",
+        "Agenti pripremaju branchove; review i push uvijek radi čovjek."
+      ],
+      "role": "Osmislio i izgradio",
+      "link": ""
+    },
+    "reneverse": {
+      "summary": "Smart Ads, platforma za oglašavanje i product placement unutar igara. Izgradio sam backend i on-chain dio; prikazana stranica pripada tvrtki.",
+      "points": [
+        "Izgradio sam GraphQL API-je, mikroservise i data pipelineove koji obrađuju podatke o kampanjama i plasmanima.",
+        "Dizajnirao sam event-driven serverless workloade na AWS-u: Lambda, ECS, SQS, SNS, S3, RDS i DynamoDB.",
+        "Napisao sam i deployao Solidity ugovore za on-chain verifikaciju oglasa i praćenje kampanja."
+      ],
+      "role": "Backend i on-chain",
+      "link": "reneverse.tech"
+    },
+    "cryptotoday": {
+      "summary": "Platforma na kojoj kripto projekti ulaze na listu glasovima zajednice umjesto plaćenim mjestom. Backend sam izgradio 2024.",
+      "points": [
+        "Izgradio sam REST API-je i PostgreSQL shemu za listinge, logiku glasanja, depozite i nagrade.",
+        "Vodio sam AWS infrastrukturu na ECS-u, RDS-u i Lambdi.",
+        "Automatizirao sam agregaciju podataka zakazanim jobovima i materijaliziranim viewovima."
+      ],
+      "role": "Backend developer",
+      "link": "cryptotoday.com"
+    },
+    "puffer-app": {
+      "summary": "Glavna Puffer aplikacija za liquid restaking: uloži ETH, dobij pufETH i upravljaj vaultovima, DeFi pozicijama i povlačenjima.",
+      "points": [
+        "Gradio sam frontend funkcionalnosti kroz tokove stakinga, vaultova i povlačenja u Reactu, wagmiju i viemu.",
+        "Integrirao sam spajanje walleta i interakcije s pametnim ugovorima za stvarne korisničke uplate.",
+        "Radio sam na backend-for-frontend API-ju koji povezuje aplikaciju s on-chain podacima."
+      ],
+      "role": "Frontend inženjer",
+      "link": "app.puffer.fi"
+    },
+    "playgrnd": {
+      "summary": "Hrvatska platforma za amaterski nogomet: raspored, rezultati uživo, natjecanja, profili i statistika igrača.",
+      "points": [
+        "Gradim frontend funkcionalnosti za raspored, natjecanja i stranice igrača.",
+        "Radim na backend integracijama iza njih.",
+        "Doprinosim AI funkcionalnostima platforme."
+      ],
+      "role": "Frontend, integracije i AI",
+      "link": "playgrnd.app"
+    },
+    "amo-na-canj": {
+      "summary": "Dvodnevni ljetni sportski festival uz rijeku Cetinu. Bio sam suorganizator i izgradio platformu iza njega.",
+      "points": [
+        "Prijave ekipa, ždrijeb uživo i turnirske sheme za pet sportova po dobnim kategorijama.",
+        "Raspored i rezultati u stvarnom vremenu uz Supabase Realtime te admin panel za dane turnira.",
+        "TV način rada za ekrane na terenu."
+      ],
+      "role": "Suorganizator i developer",
+      "link": "amonacanj.com"
+    },
+    "puffer-fi": {
+      "summary": "Rebrendirana marketinška stranica puffer.fi, prerenderirana za brzinu i SEO.",
+      "points": [
+        "Izgradio sam novu stranicu od nule do staginga u šest tjedana: React 19, statičko generiranje u React Routeru, Vite i GSAP.",
+        "Postavio sam provjere kvalitete: 120+ unit, E2E, accessibility i SEO testova, Lighthouse audite i bundle budžete.",
+        "Prenio sam rute, SEO i analitiku sa stare stranice."
+      ],
+      "role": "Glavni developer, rebrand",
+      "link": "puffer.fi"
+    },
+    "nk-osk-otok": {
+      "summary": "Cjelovit digitalni dom hrvatskog nogometnog kluba, napajan podacima saveza uživo.",
+      "points": [
+        "Stranice momčadi, igrača i utakmica za sedam selekcija, s arhivom od 2.300+ utakmica sve do sezone 2005./06.",
+        "Automatizirani pipeline iz COMET API-ja saveza: tablice, raspored, sastavi, događaji na utakmicama i statistika igrača.",
+        "Payload CMS admin prilagođen netehničkom osoblju kluba, pokriven s 240+ testova."
+      ],
+      "role": "Izrada od početka do kraja",
+      "link": "Stranica kluba"
+    },
+    "this-portfolio": {
+      "summary": "Ova stranica: izlazak na teren 3D stadiona inspiriranog Poljudom, sa svakom riječi prerenderiranom za tražilice i posjetitelje bez WebGL-a.",
+      "points": [
+        "Izgradio sam stadion u three.js-u iz koda: zdjela, krovne ljuske, instancirana publika animirana na GPU-u, igrači i bloom.",
+        "Statičko generiranje u React Routeru sa SEO-om po stranici, a 3D scena u zasebnom lazy chunku.",
+        "Testirano s Vitestom, Playwrightom i axeom, uz bundle budžete na svakom buildu."
+      ],
+      "role": "Osmislio i izgradio",
+      "link": "Ovdje si"
+    }
+  },
+  "page": {
+    "back": "Natrag na momčad",
+    "previous": "Prethodni igrač",
+    "next": "Sljedeći igrač",
+    "built": "Što sam napravio",
+    "stack": "Tehnologije",
+    "role": "Uloga",
+    "visit": "Posjeti",
+    "position": "Pozicija",
+    "notFound": "U momčadi nema igrača s tim imenom."
+  }
+}

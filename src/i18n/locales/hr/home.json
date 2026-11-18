@@ -1,0 +1,65 @@
+{
+  "intro": {
+    "kicker": "Portfolio · Full-stack developer",
+    "firstName": "Marin",
+    "lastName": "Samardžić",
+    "lead": "Web3 proizvodi, AI alati i platforme iza moje lokalne nogometne zajednice. Skrolaj i izađi iz tunela.",
+    "scroll": "Skrolaj",
+    "skip": "Preskoči na momčad",
+    "keys": "Savjet: ← → za korak po korak"
+  },
+  "chapters": {
+    "label": "Poglavlja",
+    "tunnel": "Tunel",
+    "walkOut": "Izlazak",
+    "lineup": "Postava",
+    "intros": "Igrači",
+    "squad": "Momčad",
+    "contact": "Kontakt",
+    "coach": "Trener"
+  },
+  "fullTime": {
+    "kicker": "Kraj utakmice",
+    "title": "Sljedeća utakmica?",
+    "titleAccent": "Igrajmo.",
+    "email": "Pošalji mi mail"
+  },
+  "scene": {
+    "loading": "Pale se reflektori…",
+    "unavailable": "3D stadion treba grafičku karticu s podrškom za WebGL. Sve ostalo radi normalno.",
+    "welcome": "Dobrodošli",
+    "matchday": "Dan utakmice · 2026",
+    "board": "INTER FACES · GLAVNI TRENER MARIN SAMARDŽIĆ",
+    "wall": "Ovo je dan utakmice",
+    "lineupKicker": "Dan utakmice · 2026",
+    "lineupTitle": "Prvih jedanaest",
+    "coachKicker": "Glavni trener · Inter Faces"
+  },
+  "coach": {
+    "label": "Kartica trenera",
+    "role": "Glavni trener",
+    "name": "Marin Samardžić",
+    "team": "Inter Faces · Sinj, HR",
+    "formationLabel": "Omiljena formacija",
+    "formation": "4-3-3",
+    "styleLabel": "Stil igre",
+    "style": "Isporuči brzo, testiraj sve",
+    "trophiesTitle": "Vitrina s trofejima",
+    "experience": "4+ godine",
+    "stack": "React · TS · Node · Solidity",
+    "trophies": {
+      "puffer-fi": {
+        "title": "Rebrand puffer.fi",
+        "meta": "Puffer · 2026"
+      },
+      "ai-agents": {
+        "title": "AI inženjerski sustav s 8 agenata",
+        "meta": "Puffer · 2026"
+      },
+      "amo-na-canj": {
+        "title": "Festivalska platforma za 130 ekipa",
+        "meta": "Amo na Čanj · 2026"
+      }
+    }
+  }
+}

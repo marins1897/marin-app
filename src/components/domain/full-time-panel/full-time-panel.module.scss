@@ -1,0 +1,37 @@
+.panel {
+  width: min(48rem, 100%);
+  text-align: center;
+}
+
+.title {
+  margin-top: var(--space-5);
+  font-family: var(--font-display);
+  font-size: var(--text-headline);
+  font-weight: 400;
+  line-height: var(--leading-display);
+  text-transform: uppercase;
+  text-shadow: var(--shadow-text);
+}
+
+.accent {
+  display: block;
+  color: var(--color-brand);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  justify-content: center;
+  margin-top: var(--space-7);
+}
+
+.email {
+  margin-top: var(--space-5);
+  font-family: var(--font-label);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.16em;
+  user-select: all;
+}

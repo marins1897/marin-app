@@ -1,0 +1,11 @@
+pnpm-lock.yaml
+build
+.react-router
+coverage
+reports
+playwright-report
+test-results
+node_modules
+patches
+docs/TOKENS.md
+public

@@ -1,0 +1,65 @@
+{
+  "intro": {
+    "kicker": "Portfolio · Fullstack developer",
+    "firstName": "Marin",
+    "lastName": "Samardžić",
+    "lead": "Web3 products, AI tooling and the platforms behind my local football community. Scroll to walk out of the tunnel.",
+    "scroll": "Scroll",
+    "skip": "Skip to the squad",
+    "keys": "Tip: ← → step through the walk-out"
+  },
+  "chapters": {
+    "label": "Chapters",
+    "tunnel": "Tunnel",
+    "walkOut": "Walk-out",
+    "lineup": "Line-up",
+    "intros": "Players",
+    "squad": "Squad",
+    "contact": "Contact",
+    "coach": "Coach"
+  },
+  "fullTime": {
+    "kicker": "Full time",
+    "title": "Next match?",
+    "titleAccent": "Let's play.",
+    "email": "Email me"
+  },
+  "scene": {
+    "loading": "Floodlights on…",
+    "unavailable": "The 3D stadium needs a graphics card with WebGL. Everything else works as usual.",
+    "welcome": "Welcome",
+    "matchday": "Matchday · 2026",
+    "board": "INTER FACES · HEAD COACH MARIN SAMARDŽIĆ",
+    "wall": "This is matchday",
+    "lineupKicker": "Matchday · 2026",
+    "lineupTitle": "Starting XI",
+    "coachKicker": "Head coach · Inter Faces"
+  },
+  "coach": {
+    "label": "Coach card",
+    "role": "Head coach",
+    "name": "Marin Samardžić",
+    "team": "Inter Faces · Sinj, HR",
+    "formationLabel": "Preferred formation",
+    "formation": "4-3-3",
+    "styleLabel": "Style of play",
+    "style": "Ship fast, test everything",
+    "trophiesTitle": "Trophy cabinet",
+    "experience": "4+ years",
+    "stack": "React · TS · Node · Solidity",
+    "trophies": {
+      "puffer-fi": {
+        "title": "puffer.fi rebrand",
+        "meta": "Puffer · 2026"
+      },
+      "ai-agents": {
+        "title": "8-agent AI engineering system",
+        "meta": "Puffer · 2026"
+      },
+      "amo-na-canj": {
+        "title": "130-team festival platform",
+        "meta": "Amo na Čanj · 2026"
+      }
+    }
+  }
+}

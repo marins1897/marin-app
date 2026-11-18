@@ -1,0 +1,86 @@
+.page {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-9);
+  align-items: center;
+  min-height: 100svh;
+  padding-block: var(--space-page-top) var(--space-11);
+  overflow: hidden;
+
+  @include mobile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+// A giant faded shirt number behind the call.
+.number {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  font-family: var(--font-display);
+  font-size: var(--text-giant);
+  line-height: 0.8;
+  color: var(--color-card);
+  user-select: none;
+}
+
+.flag {
+  width: clamp(4rem, 9vw, 7rem);
+  height: auto;
+  transform-origin: 8% 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: raise var(--duration-fill) var(--ease-out) both;
+  }
+}
+
+@keyframes raise {
+  from {
+    rotate: -70deg;
+  }
+}
+
+.pole {
+  fill: var(--color-text);
+}
+
+// A linesman's flag: two-tone quarters.
+.lime {
+  fill: var(--color-brand);
+}
+
+.red {
+  fill: var(--color-live);
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-5);
+  justify-items: start;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 400;
+  line-height: var(--leading-display);
+  color: var(--color-brand);
+  text-transform: uppercase;
+  text-shadow: var(--shadow-offset);
+}
+
+.lead {
+  max-width: 46ch;
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: var(--space-3);
+}

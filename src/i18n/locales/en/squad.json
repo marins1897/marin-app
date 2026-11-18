@@ -1,0 +1,203 @@
+{
+  "team": {
+    "name": "Inter Faces",
+    "formation": "4-3-3",
+    "startingXi": "Starting XI",
+    "matchday": "Matchday 2026",
+    "bench": "Bench",
+    "captain": "Captain",
+    "captainShort": "C",
+    "scoutReport": "Scout report",
+    "squadTitle": "The squad",
+    "squadLead": "Head coach Marin Samardžić picked eleven projects, each in the position that fits what it is. Open any player for the full scout report.",
+    "why": "Why {{position}}:",
+    "progress": "Player {{current}} of {{total}}",
+    "board": "STARTING XI · INTER FACES · 4-3-3 · HEAD COACH MARIN SAMARDŽIĆ",
+    "stack": "Stack",
+    "coach": "Head coach",
+    "coachName": "Marin Samardžić"
+  },
+  "positions": {
+    "GK": "goalkeeper",
+    "RB": "right back",
+    "CB": "centre back",
+    "LB": "left back",
+    "DM": "defensive midfield",
+    "CM": "central midfield",
+    "RW": "right wing",
+    "ST": "striker",
+    "LW": "left wing"
+  },
+  "players": {
+    "e-sljedivost": {
+      "title": "e-Sljedivost",
+      "club": "CS Computer Systems",
+      "period": "2022 – 2024",
+      "about": "Croatia's public food traceability portal: scan a product's QR code and follow it back through the supply chain.",
+      "why": "the last line of trust. Croatia's public food traceability portal, where every product record lives on a blockchain.",
+      "stats": {
+        "client": "government",
+        "lookup": "product lookup",
+        "ledger": "Hyperledger"
+      },
+      "imageAlt": "The public e-Sljedivost portal: scan a QR code or enter a product ID"
+    },
+    "cross-chain-interop": {
+      "title": "Cross-chain interop",
+      "club": "Puffer",
+      "period": "2026",
+      "about": "Cross-chain supply, borrow and flash-loan flows on Puffer UniFi: one intention, signed once, executed on L1 and L2.",
+      "why": "it links the two halves of the pitch: one signed intention, executed on L1 and L2.",
+      "stats": {
+        "flows": "flows",
+        "eip": "EIP",
+        "chains": "chains"
+      },
+      "imageAlt": "The cross-chain interop app: one intention, both chains, with Supply, Borrow and Flashloan flows"
+    },
+    "ai-agents": {
+      "title": "8 AI agents",
+      "club": "Own tooling",
+      "period": "2026",
+      "about": "Eight Claude-based engineering agents for code review, security scans, audits and release prep. I designed and built them.",
+      "why": "they defend the codebase: review, security scans and audits before anything ships.",
+      "stats": {
+        "agents": "agents",
+        "skills": "skills",
+        "pushes": "unreviewed pushes"
+      },
+      "imageAlt": ""
+    },
+    "reneverse": {
+      "title": "ReneVerse",
+      "club": "ReneVerse",
+      "period": "2024 – 2025",
+      "about": "Smart Ads, an in-game advertising platform. I built the backend and the on-chain side.",
+      "why": "heavy backend: the serverless pipelines and contracts the ads run on.",
+      "stats": {
+        "serverless": "serverless",
+        "apis": "APIs",
+        "contracts": "contracts"
+      },
+      "imageAlt": "The ReneVerse website promoting Smart Ads for in-game advertising"
+    },
+    "cryptotoday": {
+      "title": "CryptoToday",
+      "club": "CryptoToday",
+      "period": "2024",
+      "about": "A platform where crypto projects get listed by community vote, not paid placement. I built the backend.",
+      "why": "the backend that decides what gets listed: votes, deposits and rewards.",
+      "stats": {
+        "api": "API",
+        "database": "PostgreSQL",
+        "infra": "infrastructure"
+      },
+      "imageAlt": "The CryptoToday homepage: community-voted coin listings"
+    },
+    "puffer-app": {
+      "title": "Puffer app",
+      "club": "Puffer",
+      "period": "2025 –",
+      "about": "Puffer's liquid restaking app: stake ETH, receive pufETH, and manage vaults and withdrawals.",
+      "why": "it holds the midfield and the money: the dApp where users stake.",
+      "stats": {
+        "staked": "staking",
+        "token": "receipt token",
+        "kind": "web3 app"
+      },
+      "imageAlt": "The Puffer staking app: deposit ETH and receive pufETH"
+    },
+    "playgrnd": {
+      "title": "PLAYGRND",
+      "club": "Contributor",
+      "period": "2026 –",
+      "about": "A Croatian amateur football platform: fixtures, live results and player stats. I work on frontend, integrations and AI.",
+      "why": "pace on the flank: a live product with thousands of players every week.",
+      "stats": {
+        "players": "players",
+        "teams": "teams",
+        "matches": "matches"
+      },
+      "imageAlt": "PLAYGRND: today's amateur matches, featured players and platform stats"
+    },
+    "amo-na-canj": {
+      "title": "Amo na Čanj",
+      "club": "Side project · co-organiser",
+      "period": "2026",
+      "about": "A two-day summer sports festival by the Cetina river. I co-organised it and built the platform behind it.",
+      "why": "box to box: I organised the festival and built the platform that ran it.",
+      "stats": {
+        "teams": "teams",
+        "sports": "sports",
+        "days": "days"
+      },
+      "imageAlt": "The Amo na Čanj festival website"
+    },
+    "puffer-fi": {
+      "title": "puffer.fi",
+      "club": "Puffer",
+      "period": "2026",
+      "about": "The rebranded puffer.fi site, built from scratch and prerendered for speed and SEO.",
+      "why": "the one everyone sees: the public face of the company, built from scratch.",
+      "stats": {
+        "staging": "to staging",
+        "tests": "tests",
+        "rendering": "prerendered"
+      },
+      "imageAlt": "The puffer.fi homepage"
+    },
+    "nk-osk-otok": {
+      "title": "NK OSK Otok",
+      "club": "Side project · club platform",
+      "period": "2026 –",
+      "about": "The full digital home of a Croatian football club, fed by live federation data and built end to end.",
+      "why": "my most complete product, from data pipeline to design to CMS, run end to end for a real club.",
+      "stats": {
+        "matches": "matches",
+        "squads": "squads",
+        "tests": "tests"
+      },
+      "imageAlt": "NK OSK Otok match centre: league table head-to-head, live score and match stats"
+    },
+    "this-portfolio": {
+      "title": "This portfolio",
+      "club": "New signing",
+      "period": "2026",
+      "about": "This site: a scroll-driven walk-out into a 3D stadium, with every word prerendered.",
+      "why": "the new signing: a 3D stadium you are standing in right now.",
+      "stats": {
+        "stadium": "stadium",
+        "players": "players",
+        "cookies": "cookies"
+      },
+      "imageAlt": "This portfolio: the Inter Faces team sheet beside the 4-3-3 line-up in the floodlit 3D stadium"
+    }
+  },
+  "bench": {
+    "ap2-agent-payments": {
+      "title": "AP2 agent payments",
+      "tag": "Puffer",
+      "summary": "Demo of AI agents paying on Puffer UniFi: recurring x402 payments and automated purchasing."
+    },
+    "azra-player": {
+      "title": "Azra music player",
+      "tag": "Academy",
+      "summary": "An early web music player for the band Azra, still online."
+    },
+    "telegram-mini-app": {
+      "title": "Telegram mini app",
+      "tag": "Puffer",
+      "summary": "Puffer inside Telegram."
+    },
+    "mediiochain": {
+      "title": "MediioChain",
+      "tag": "CS Computer Systems",
+      "summary": "Healthcare data exchange on blockchain."
+    },
+    "kavana-quiz": {
+      "title": "Kavana quiz",
+      "tag": "Side project",
+      "summary": "An archive and builder for pub quiz nights."
+    }
+  }
+}

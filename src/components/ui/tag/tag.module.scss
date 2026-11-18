@@ -1,0 +1,28 @@
+.tag {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  line-height: 1;
+  transform: skewX(var(--skew));
+}
+
+.text {
+  display: inline-block;
+  transform: skewX(var(--skew-undo));
+}
+
+.accent {
+  font-family: var(--font-label);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent-contrast);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  background-color: var(--color-accent);
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-brand-contrast);
+  background-color: var(--color-brand);
+}

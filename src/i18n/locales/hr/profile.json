@@ -1,0 +1,75 @@
+{
+  "kicker": "Profil trenera",
+  "title": "O meni",
+  "about": [
+    "Full-stack developer sam iz Sinja, s 4+ godine iskustva u izradi blockchain proizvoda od početka do kraja: React i TypeScript frontendi, Node.js i GraphQL backendi, Solidity i Hyperledger ugovori te AWS infrastruktura ispod svega.",
+    "U Pufferu vodim frontend razvoj kroz cijeli paket proizvoda, od restaking dAppa do rebranda puffer.fi, i gradim AI alate tima: MCP servise, RAG pipelineove i inženjerski sustav od osam agenata.",
+    "Izvan radnog vremena gradim za svoju lokalnu nogometnu zajednicu: klupsku platformu za NK OSK Otok i stranicu festivala Amo na Čanj, na kojem je nastupilo 130 ekipa u pet sportova."
+  ],
+  "facts": {
+    "label": "Ukratko",
+    "basedLabel": "Lokacija",
+    "based": "Sinj, Hrvatska · na daljinu",
+    "experienceLabel": "Iskustvo",
+    "experience": "4+ godine",
+    "educationLabel": "Obrazovanje",
+    "education": "Magistar inženjer elektrotehnike, Sveučilište u Splitu"
+  },
+  "careerTitle": "Povijest transfera",
+  "present": "danas",
+  "career": {
+    "puffer": {
+      "club": "Puffer",
+      "role": "Fullstack Blockchain Developer",
+      "place": "Na daljinu · puno radno vrijeme",
+      "points": [
+        "Vodio sam frontend razvoj kroz cijeli paket proizvoda: restaking dApp za uplate i povlačenja, rebrand puffer.fi i cross-chain interop aplikaciju, na arhitekturi, dizajn sustavu i standardima kvalitete koje sam postavio.",
+        "Izgradio sam backend sloj prema lancu (BFF API, referral servisi, Telegram bot, verifikator withdrawal credentialsa o kojem ovisi registracija validatora) i AI alate: MCP servise, RAG pipelineove i inženjerski sustav od osam agenata."
+      ]
+    },
+    "reneverse": {
+      "club": "ReneVerse",
+      "role": "Fullstack Blockchain Developer",
+      "place": "Na daljinu · puno radno vrijeme",
+      "points": [
+        "Izgradio sam backend i on-chain infrastrukturu za Smart Ads, platformu za oglašavanje unutar igara: GraphQL API-je, mikroservise i event-driven AWS serverless pipelineove za velike količine oglasnih događaja.",
+        "Napisao sam Solidity ugovore za on-chain verifikaciju oglasa i povezao ih od početka do kraja s React i Next.js frontendom."
+      ]
+    },
+    "cryptotoday": {
+      "club": "CryptoToday",
+      "role": "Backend Developer",
+      "place": "Na daljinu · nepuno radno vrijeme",
+      "points": [
+        "Izgradio sam backend platforme zajednice za kripto listinge i glasanje tokenima: REST API-je, PostgreSQL shemu, logiku glasanja te on-chain tokove depozita i nagrada.",
+        "Vodio sam AWS infrastrukturu i automatizirao agregaciju podataka zakazanim jobovima i materijaliziranim viewovima."
+      ]
+    },
+    "cs-computer-systems": {
+      "club": "CS Computer Systems",
+      "role": "Frontend Blockchain Developer",
+      "place": "Zagreb · hibridno",
+      "points": [
+        "Izgradio sam frontende za dvije enterprise blockchain platforme koje koriste bolnice i država: MediioChain za razmjenu zdravstvenih podataka i e-Sljedivost, hrvatski portal za sljedivost hrane.",
+        "Isporučio sam React dashboarde s analitikom u stvarnom vremenu u d3.js-u, React Native aplikaciju i chaincode u Go-u za Hyperledger Fabric."
+      ]
+    },
+    "mps-data": {
+      "club": "MPS Data",
+      "role": "Nogometni analitičar",
+      "place": "Na daljinu · studentski posao",
+      "points": [
+        "Prije koda: analiza utakmica uživo i sa snimke te strukturirani skautski izvještaji za profiliranje igrača."
+      ]
+    }
+  },
+  "skillsTitle": "Vještine",
+  "skills": {
+    "frontend": "Frontend",
+    "web3": "Web3",
+    "backend": "Backend i cloud",
+    "ai": "AI inženjering",
+    "quality": "Testiranje i kvaliteta"
+  },
+  "stackLabel": "Tehnologije · {{club}}"
+}

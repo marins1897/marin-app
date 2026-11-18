@@ -1,0 +1,136 @@
+// Semantic tokens, defined once and mapped to the palette (palette.scss).
+// Components use ONLY these semantic tokens; palette vars are allowed in this
+// file alone. Regenerate docs/TOKENS.md with `pnpm generate:tokens` after
+// editing.
+
+// This file is reached through `@use` from globals.scss, not directly by Vite,
+// so Vite's `additionalData` injection does not apply: the helpers (spacing())
+// must be imported explicitly here. `.module.scss` files must NOT do this;
+// they get the helpers injected.
+@use './helpers' as *;
+
+// The site has one look: a floodlit night stadium in Volt colours (DECISIONS § 13).
+:root {
+  --color-bg: var(--primary-navy-95);
+  --color-bg-elevated: var(--primary-navy-90);
+  --color-text: var(--system-white);
+  --color-text-muted: var(--system-white-70);
+  --color-text-faint: var(--system-white-35);
+  --color-brand: var(--primary-volt-50);
+  --color-brand-contrast: var(--primary-volt-95);
+  --color-accent: var(--primary-electric-50);
+  --color-accent-contrast: var(--system-white);
+  --color-card: var(--neutral-card-95);
+  --color-card-tile: rgb(255 255 255 / 5%);
+  --color-stripe: rgb(212 255 31 / 6%);
+  --color-live: var(--secondary-red-50);
+  --color-available: var(--secondary-green-50);
+  --color-border: var(--system-white-14);
+  --color-track: var(--system-white-22);
+  --color-focus-ring: var(--primary-volt-50);
+  --color-overlay: var(--system-black-55);
+  --color-panel: rgb(10 12 20 / 72%);
+  --gradient-photo-fade: linear-gradient(
+    0deg,
+    rgb(10 12 18 / 98%) 0%,
+    rgb(10 12 18 / 20%) 55%,
+    transparent
+  );
+  --pattern-stripes: repeating-linear-gradient(
+    135deg,
+    var(--color-stripe) 0 10px,
+    transparent 10px 22px
+  );
+  --gradient-stage-shade:
+    linear-gradient(90deg, rgb(2 5 14 / 62%), transparent 48%),
+    linear-gradient(0deg, rgb(2 5 14 / 55%), transparent 30%);
+  --gradient-stage-floor:
+    radial-gradient(
+      120% 80% at 50% 110%,
+      var(--primary-navy-90),
+      transparent 70%
+    ),
+    var(--primary-navy-95);
+
+  // Spacing: 4px scale via the design system's spacing() (factor × 0.125rem).
+  --space-1: #{spacing(2)};
+  --space-2: #{spacing(4)};
+  --space-3: #{spacing(6)};
+  --space-4: #{spacing(8)};
+  --space-5: #{spacing(10)};
+  --space-6: #{spacing(12)};
+  --space-7: #{spacing(14)};
+  --space-8: #{spacing(16)};
+  --space-9: #{spacing(20)};
+  --space-10: #{spacing(24)};
+  --space-11: #{spacing(32)};
+  --space-12: #{spacing(48)};
+
+  // Typography. Font faces are declared in fonts.scss.
+  --font-body:
+    inter, 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', roboto,
+    sans-serif;
+  --font-display: 'Russo One', 'Display Fallback', 'Arial Black', sans-serif;
+  --font-label: 'Saira Condensed', 'Arial Narrow', sans-serif;
+  --font-mono: ui-monospace, sfmono-regular, menlo, consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --text-hero: clamp(4rem, 10.5vw, 10.25rem);
+  --text-headline: clamp(3.5rem, 8vw, 7.5rem);
+  --text-number: clamp(4rem, 7vw, 6.5rem);
+  --text-giant: clamp(10rem, 34vw, 28rem);
+  --leading-tight: 1.15;
+  --leading-display: 0.85;
+  --leading-normal: 1.5;
+  --tracking-label: 0.22em;
+
+  // Shape and elevation.
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 40%);
+  --shadow-lg: 0 24px 60px rgb(0 0 0 / 55%);
+  --shadow-text: 0 8px 50px rgb(0 0 0 / 55%);
+  --shadow-offset: 6px 6px 0 var(--primary-electric-50);
+  --shadow-offset-pressed: 3px 3px 0 var(--primary-electric-50);
+  --shadow-outline: inset 0 0 0 2px var(--system-white);
+  --skew: -12deg;
+  --skew-undo: 12deg;
+  --edge: 6px;
+
+  // Layout.
+  --container-max: 72rem;
+  --gutter: var(--space-4);
+  --header-height: 4.5rem;
+  --space-page-top: calc(var(--header-height) + var(--space-8));
+
+  // Focus.
+  --focus-ring-width: 2px;
+
+  // Stacking.
+  --z-scene: 0;
+  --z-overlay: 10;
+  --z-header: 100;
+  --z-loading: 150;
+  --z-skip-link: 300;
+
+  // Motion.
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --duration-panel: 600ms;
+  --duration-fill: 900ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: dark;
+}

@@ -1,0 +1,32 @@
+.scene {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-stage-floor);
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity var(--duration-panel) var(--ease-out);
+  }
+}
+
+.scene[data-status='loading'] .canvas {
+  opacity: 0;
+}
+
+.status {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-faint);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  translate: -50% 0;
+}

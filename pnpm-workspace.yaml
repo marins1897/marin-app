@@ -1,0 +1,17 @@
+# Build scripts are denied by default; only the toolchain packages that need a
+# native binary to be compiled/fetched are allowed to run them.
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': true
+  esbuild: true
+  msw: true
+  unrs-resolver: true
+
+minimumReleaseAgeExclude:
+  - jsdom@30.1.1
+
+# eslint-plugin-jsx-a11y works on ESLint 10 (maintainer confirmed, issue #1075)
+# but has not widened its peer range yet.
+peerDependencyRules:
+  allowedVersions:
+    'eslint-plugin-jsx-a11y>eslint': '10'

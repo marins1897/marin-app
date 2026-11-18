@@ -1,0 +1,60 @@
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-display);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transform: skewX(var(--skew));
+
+  &:focus-visible {
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      box-shadow var(--duration-fast) var(--ease-standard),
+      background-color var(--duration-fast) var(--ease-standard),
+      color var(--duration-fast) var(--ease-standard);
+  }
+}
+
+// The text stays upright inside the skewed block.
+.label {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  transform: skewX(var(--skew-undo));
+}
+
+.brand {
+  color: var(--color-brand-contrast);
+  background-color: var(--color-brand);
+  box-shadow: var(--shadow-offset);
+
+  &:hover {
+    box-shadow: var(--shadow-offset-pressed);
+  }
+}
+
+.outline {
+  color: var(--color-text);
+  background-color: var(--color-panel);
+  box-shadow: var(--shadow-outline);
+
+  &:hover {
+    color: var(--color-bg);
+    background-color: var(--color-text);
+  }
+}
+
+.sm {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.md {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-base);
+}

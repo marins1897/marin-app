@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      dev-tooling:
+        dependency-type: development
+        patterns: ['*']
+      runtime:
+        dependency-type: production
+        patterns: ['*']
+    ignore:
+      # Pinned and patched (patches/). Bumping needs a manual SSG + no-JS e2e re-proof.
+      - dependency-name: vite-react-ssg
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday

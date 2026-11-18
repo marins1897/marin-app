@@ -1,0 +1,25 @@
+{
+  "skipToContent": "Preskoči na glavni sadržaj",
+  "header": {
+    "home": "Marin Samardžić, početna",
+    "firstName": "Marin",
+    "lastName": "Samardžić",
+    "matchday": "Dan utakmice",
+    "location": "Sinj, Hrvatska",
+    "profile": "Profil",
+    "download": "Preuzmi",
+    "cv": "CV"
+  },
+  "nav": {
+    "label": "Glavna navigacija",
+    "opensInNewTab": "otvara se u novoj kartici"
+  },
+  "footer": {
+    "label": "Podnožje",
+    "social": "Društvene mreže",
+    "copyright": "© {{year}} Marin Samardžić"
+  },
+  "status": {
+    "loading": "Učitavanje…"
+  }
+}

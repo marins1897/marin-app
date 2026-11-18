@@ -1,0 +1,125 @@
+{
+  "players": {
+    "e-sljedivost": {
+      "summary": "A public portal for the Croatian government where anyone can scan a product's QR code, or type its ID, and follow the food back through the supply chain.",
+      "points": [
+        "Built React and Material UI interfaces for tracking and analytics, with d3.js charts for producers, inspectors and the public.",
+        "Connected the UI to the Hyperledger Fabric network through Node.js endpoints that keep the screens in sync with the ledger.",
+        "Wrote chaincode in Go for the records the portal reads."
+      ],
+      "role": "Frontend developer",
+      "link": "esljedivost.mps.hr"
+    },
+    "cross-chain-interop": {
+      "summary": "Atomic cross-chain supply, borrow and flash-loan flows on Puffer UniFi: one intention, signed once, executed on L1 and L2 with EIP-7702.",
+      "points": [
+        "Redesigned the whole app to the new Puffer brand without a dedicated designer.",
+        "Built a shared UI kit and flow components while keeping every transaction flow's logic byte-identical.",
+        "Replaced the library toast rendering with an app-level provider so status messages read clearly in each step."
+      ],
+      "role": "Frontend redesign and build",
+      "link": "Live demo"
+    },
+    "ai-agents": {
+      "summary": "Eight Claude-based engineering agents with custom skills for code review, security scans, dependency and performance audits, and release prep.",
+      "points": [
+        "Wrote eleven custom skills, from PR review and security checklists to SEO and performance audits and shipping changes.",
+        "Ran every agent in a sandbox with time and turn limits, and backed the system up hourly with a tested restore.",
+        "Agents prepare branches; a person always reviews and pushes."
+      ],
+      "role": "Designed and built",
+      "link": ""
+    },
+    "reneverse": {
+      "summary": "Smart Ads, an in-game advertising and product placement platform. I built the backend and on-chain side; the website shown is the company's.",
+      "points": [
+        "Built GraphQL APIs, microservices and data pipelines that process campaign and placement data.",
+        "Designed event-driven serverless workloads on AWS: Lambda, ECS, SQS, SNS, S3, RDS and DynamoDB.",
+        "Wrote and deployed Solidity contracts for on-chain ad verification and campaign tracking."
+      ],
+      "role": "Backend and on-chain",
+      "link": "reneverse.tech"
+    },
+    "cryptotoday": {
+      "summary": "A community platform where crypto projects get listed by community vote instead of paid placement. I built the backend in 2024.",
+      "points": [
+        "Built the REST APIs and PostgreSQL schema for listings, voting logic, deposits and rewards.",
+        "Ran the AWS infrastructure on ECS, RDS and Lambda.",
+        "Automated data aggregation with scheduled jobs and materialized views."
+      ],
+      "role": "Backend developer",
+      "link": "cryptotoday.com"
+    },
+    "puffer-app": {
+      "summary": "Puffer's main liquid restaking app: stake ETH, receive pufETH, and manage vaults, DeFi positions and withdrawals.",
+      "points": [
+        "Built frontend features across the staking, vault and withdrawal flows in React, wagmi and viem.",
+        "Integrated wallet connections and smart contract interactions for real user deposits.",
+        "Worked on the backend-for-frontend API that connects the app to on-chain data."
+      ],
+      "role": "Frontend engineer",
+      "link": "app.puffer.fi"
+    },
+    "playgrnd": {
+      "summary": "A Croatian platform for amateur football: fixtures, live results, competitions, player profiles and stats.",
+      "points": [
+        "Build frontend features across schedules, competitions and player pages.",
+        "Work on backend integrations behind them.",
+        "Contribute to the platform's AI features."
+      ],
+      "role": "Frontend, integrations and AI",
+      "link": "playgrnd.app"
+    },
+    "amo-na-canj": {
+      "summary": "A two-day summer sports festival by the Cetina river. I co-organised it and built the platform behind it.",
+      "points": [
+        "Team registrations, live draws and brackets for five sports across age categories.",
+        "A real-time schedule and results with Supabase Realtime, plus a match-day admin panel.",
+        "A TV mode for the screens at the venue."
+      ],
+      "role": "Co-organiser and developer",
+      "link": "amonacanj.com"
+    },
+    "puffer-fi": {
+      "summary": "The rebranded puffer.fi marketing site, prerendered for speed and SEO.",
+      "points": [
+        "Built the new site from scratch to staging in six weeks: React 19, React Router static generation, Vite and GSAP.",
+        "Set up its quality gates: 120+ unit, end-to-end, accessibility and SEO tests, Lighthouse audits and bundle budgets.",
+        "Moved routes, SEO and analytics over from the old site."
+      ],
+      "role": "Lead developer, rebrand",
+      "link": "puffer.fi"
+    },
+    "nk-osk-otok": {
+      "summary": "The full digital home of a Croatian football club, fed by the federation's live data.",
+      "points": [
+        "Team, player and match pages for seven squads, with a season archive of 2,300+ matches back to 2005/06.",
+        "An automated pipeline from the federation's COMET API: standings, fixtures, line-ups, match events and player stats.",
+        "A Payload CMS admin built for non-technical club staff, with 240+ tests behind it."
+      ],
+      "role": "Built end to end",
+      "link": "Club site"
+    },
+    "this-portfolio": {
+      "summary": "This site: a scroll-driven walk-out into a 3D stadium inspired by Poljud, with every word prerendered for search and for visitors without WebGL.",
+      "points": [
+        "Built the stadium in three.js from code: bowl, shell roofs, an instanced crowd animated on the GPU, players and bloom.",
+        "React Router static generation with per-page SEO, and the 3D scene in its own lazy chunk.",
+        "Tested with Vitest, Playwright and axe, with bundle budgets on every build."
+      ],
+      "role": "Designed and built",
+      "link": "You are here"
+    }
+  },
+  "page": {
+    "back": "Back to the squad",
+    "previous": "Previous player",
+    "next": "Next player",
+    "built": "What I did",
+    "stack": "Stack",
+    "role": "Role",
+    "visit": "Visit",
+    "position": "Position",
+    "notFound": "No player with that name in the squad."
+  }
+}

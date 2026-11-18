@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: var(--z-header);
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-4) var(--gutter);
+  pointer-events: none;
+
+  > * {
+    pointer-events: auto;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  gap: var(--space-3);
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1;
+  color: var(--color-text);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: var(--shadow-sm);
+
+  @include mobile {
+    font-size: var(--text-sm);
+  }
+
+  &::before {
+    width: var(--space-1);
+    height: 1.4em;
+    content: '';
+    background-color: var(--color-brand);
+    transform: skewX(var(--skew));
+
+    @include mobile {
+      align-self: stretch;
+      height: auto;
+    }
+  }
+}
+
+// Phones: the name stacks on two short lines so the nav fits at 320 px.
+.name {
+  @include mobile {
+    display: grid;
+  }
+}
+
+.matchday {
+  display: flex;
+  padding-left: var(--space-4);
+  border-left: 1px solid var(--color-border);
+  gap: var(--space-2);
+  align-items: center;
+  font-family: var(--font-label);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+
+  strong {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.live {
+  width: var(--space-2);
+  height: var(--space-2);
+  background-color: var(--color-live);
+  border-radius: var(--radius-full);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  margin-left: auto;
+
+  @include mobile {
+    gap: var(--space-2);
+  }
+}
+
+.link {
+  padding: var(--space-2) var(--space-1);
+  font-family: var(--font-label);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  text-shadow: var(--shadow-sm);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  @include mobile {
+    font-size: var(--text-sm);
+    letter-spacing: 0.1em;
+  }
+
+  &:hover {
+    border-bottom-color: var(--color-brand);
+  }
+}
+
+// Phones show just "CV"; the hidden word keeps the accessible name "Download CV".
+.long {
+  @include mobile {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

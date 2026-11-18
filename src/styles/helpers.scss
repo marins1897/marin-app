@@ -1,0 +1,40 @@
+// Sass helpers injected into every stylesheet Vite processes (vite.config.ts
+// `additionalData`), so `.module.scss` files use them without imports.
+// Files reached only through `@use` (tokens.scss, palette.scss) import this
+// module explicitly.
+
+// Breakpoints. Must be Sass variables: custom properties cannot drive @media.
+// Mobile-first: write base styles for small screens, override upwards.
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1280px;
+$desktop-lg: 1600px;
+
+@mixin mobile {
+  @media (width <= $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (width <= $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (width <= $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (width <= $desktop-lg) {
+    @content;
+  }
+}
+
+/// Spacing on a 0.125rem (2px) grid: spacing(8) = 1rem.
+@function spacing($factor: 8) {
+  @return #{$factor * 0.125}rem;
+}

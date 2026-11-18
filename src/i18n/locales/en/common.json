@@ -1,0 +1,25 @@
+{
+  "skipToContent": "Skip to main content",
+  "header": {
+    "home": "Marin Samardžić, home",
+    "firstName": "Marin",
+    "lastName": "Samardžić",
+    "matchday": "Matchday",
+    "location": "Sinj, Croatia",
+    "profile": "Profile",
+    "download": "Download",
+    "cv": "CV"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "opensInNewTab": "opens in a new tab"
+  },
+  "footer": {
+    "label": "Footer",
+    "social": "Social",
+    "copyright": "© {{year}} Marin Samardžić"
+  },
+  "status": {
+    "loading": "Loading…"
+  }
+}

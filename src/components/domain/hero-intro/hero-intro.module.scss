@@ -1,0 +1,117 @@
+.intro {
+  max-width: 52rem;
+}
+
+.title {
+  margin-top: var(--space-5);
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 400;
+  line-height: var(--leading-display);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  text-shadow: var(--shadow-text);
+}
+
+.first,
+.last {
+  display: block;
+}
+
+.last {
+  color: var(--color-brand);
+}
+
+.lead {
+  max-width: 46ch;
+  margin-top: var(--space-5);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-8);
+  align-items: center;
+  margin-top: var(--space-6);
+}
+
+.scroll {
+  display: inline-flex;
+  gap: var(--space-3);
+  align-items: center;
+  font-family: var(--font-label);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+}
+
+.wheel {
+  position: relative;
+  width: 22px;
+  height: 34px;
+  border: 2px solid var(--color-text-muted);
+  border-radius: var(--radius-lg);
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 3px;
+    height: 7px;
+    content: '';
+    background-color: var(--color-brand);
+    border-radius: var(--radius-sm);
+    translate: -50% 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &::after {
+      animation: wheel 1.6s var(--ease-standard) infinite;
+    }
+  }
+}
+
+@keyframes wheel {
+  60% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  61% {
+    opacity: 0;
+    transform: none;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skip {
+  padding-block: var(--space-2);
+  font-family: var(--font-label);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-brand);
+}
+
+// Keyboard hint: only where there is a keyboard to speak of.
+.keys {
+  margin-top: var(--space-4);
+  font-family: var(--font-label);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.12em;
+
+  @media (hover: none) {
+    display: none;
+  }
+}

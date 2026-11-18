@@ -1,0 +1,163 @@
+// Scroll track: its height is the length of the walk-out. The stage sticks to
+// the viewport while the track scrolls past.
+.track {
+  position: relative;
+  height: 2400vh;
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 35rem;
+  overflow: hidden;
+}
+
+.scene {
+  z-index: var(--z-scene);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--gradient-stage-shade);
+}
+
+// Panels: positioned on the stage, shown only while their chapter is on.
+// Scoped under .stage so `position` beats ui components' own
+// `position: relative` (Panel) whatever order the stylesheets load in.
+.stage :is(.intro, .coach, .lineup, .players, .squad, .full-time) {
+  position: absolute;
+  z-index: var(--z-overlay);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(calc(var(--space-6) * -1));
+
+  &[data-active] {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      opacity var(--duration-panel) var(--ease-out),
+      transform var(--duration-panel) var(--ease-out),
+      visibility var(--duration-panel);
+  }
+}
+
+.intro {
+  bottom: 12vh;
+  left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.coach {
+  top: 50%;
+  left: var(--gutter);
+  width: min(25rem, calc(100% - 2 * var(--gutter)));
+  translate: 0 -50%;
+
+  @include mobile {
+    top: auto;
+    bottom: var(--space-5);
+    translate: none;
+  }
+}
+
+.lineup {
+  top: 50%;
+  left: var(--gutter);
+  width: min(24rem, calc(100% - 2 * var(--gutter)));
+  translate: 0 -50%;
+
+  @include mobile {
+    top: auto;
+    bottom: 10vh;
+    translate: none;
+  }
+}
+
+.squad {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  transform: translateY(var(--space-5));
+  width: min(64rem, calc(100% - 2 * var(--gutter)));
+}
+
+.players {
+  right: var(--gutter);
+  max-height: calc(100svh - var(--space-page-top));
+  bottom: 12vh;
+  transform: translateX(var(--space-6));
+
+  @include mobile {
+    bottom: var(--space-5);
+    left: var(--gutter);
+    width: auto;
+  }
+}
+
+.full-time {
+  top: 50%;
+  left: 50%;
+  padding-inline: var(--gutter);
+  translate: -50% -50%;
+  transform: translateY(var(--space-5));
+}
+
+.rail {
+  position: absolute;
+  bottom: var(--space-5);
+  left: 50%;
+  z-index: var(--z-overlay);
+  translate: -50% 0;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+// Without JavaScript nothing drives the walk-out: show a plain, readable page.
+:global(:root:not([data-js])) {
+  .track {
+    height: auto;
+  }
+
+  .stage {
+    position: static;
+    display: grid;
+    gap: var(--space-10);
+    height: auto;
+    padding: var(--space-12) var(--gutter) var(--space-10);
+    overflow: visible;
+  }
+
+  .scene,
+  .shade,
+  .rail {
+    display: none;
+  }
+
+  .intro,
+  .coach,
+  .lineup,
+  .players,
+  .squad,
+  .full-time {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    translate: none;
+  }
+
+  .full-time,
+  .squad {
+    max-height: none;
+    margin-inline: auto;
+  }
+}
