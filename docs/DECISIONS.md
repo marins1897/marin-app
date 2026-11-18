@@ -300,3 +300,18 @@ The dev server pre-bundles every client dependency up front
 (`optimizeDeps.include` in `vite.config.ts`); one discovered mid-session
 re-bundles and answers 504 "Outdated Optimize Dep", which leaves the page
 without JavaScript.
+
+## 20. Visitor stats: Vercel Web Analytics, first-party and cookieless
+
+While Marin is job hunting, knowing whether the portfolio gets opened (visits,
+referrers such as LinkedIn, countries, devices, which scout reports) is worth
+one small script. Vercel Web Analytics sets no cookies and stores no personal
+data, so there is still no consent banner, and it is served from the site's
+own origin (`/_vercel/insights/*`), so the CSP stays `'self'`.
+
+No npm package: `utils/analytics.ts` adds Vercel's plain script at runtime,
+and only when the page is served from the production host (`SITE_URL`).
+Local dev, `pnpm preview`, Playwright and Vercel preview deployments make no
+analytics requests, and the prerendered HTML is unchanged. Client-side
+navigation is tracked by the script itself. Custom events (for example CV
+downloads) need Vercel's Pro plan and are not used.

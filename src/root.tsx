@@ -20,6 +20,8 @@ import { i18nFor, initI18n, registerNamespace } from '@/i18n/i18n';
 import common from '@/i18n/locales/en/common.json';
 import { notFoundContent } from '@/content/not-found';
 import { buildPageMeta } from '@/seo/page-meta';
+import { SITE_URL } from '@/seo/site';
+import { loadAnalytics } from '@/utils/analytics';
 import { NotFoundContent } from './routes/not-found/not-found';
 import styles from './root.module.scss';
 
@@ -92,6 +94,10 @@ export const Layout = ({ children }: { children: ReactNode }) => (
 /** Every page renders in the language its URL names (`/hr/…` → Croatian). */
 const AppShell = ({ children }: { children: ReactNode }) => {
   const locale = useLocale();
+
+  useEffect(() => {
+    loadAnalytics(SITE_URL);
+  }, []);
 
   // Layout is not re-rendered on client navigation, so keep <html lang> current here.
   useEffect(() => {
