@@ -37,7 +37,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/setup
       - run: pnpm test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: coverage
@@ -54,12 +54,12 @@ jobs:
       # `analyze` runs the same prerender build with the bundle report enabled,
       # then the budget script fails the job on any overage (docs/PERFORMANCE.md).
       - run: pnpm analyze && pnpm exec tsx scripts/check-bundle-size.ts
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: build
           path: build/client
           retention-days: 7
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bundle-stats
           path: reports/bundle-stats.html
@@ -93,7 +93,7 @@ jobs:
       - run: pnpm test:e2e
         env:
           CI: true
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: playwright-report
@@ -116,7 +116,7 @@ jobs:
           path: build/client
       - name: Run Lighthouse (mobile, 3 runs per page, asserts targets)
         run: mkdir -p reports && pnpm lighthouse | tee reports/lighthouse-summary.md
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: lighthouse-reports
