@@ -28,32 +28,32 @@ describe('buildPageMeta', () => {
       expect(meta).toContainEqual({ title: 'Restake | Marin Samardžić' });
       expect(meta).toContainEqual({
         property: 'og:url',
-        content: 'https://marin-portfolio1897.vercel.app/restake',
+        content: 'https://marin-iota.vercel.app/restake',
       });
       expect(meta).toContainEqual({
         property: 'og:image',
-        content: 'https://marin-portfolio1897.vercel.app/images/og-default.jpg',
+        content: 'https://marin-iota.vercel.app/images/og-default.jpg',
       });
       expect(jsonLdTypes(meta)).toEqual(['WebPage', 'BreadcrumbList']);
       expect(buildPageLinks('/restake')).toEqual([
         {
           rel: 'canonical',
-          href: 'https://marin-portfolio1897.vercel.app/restake',
+          href: 'https://marin-iota.vercel.app/restake',
         },
         {
           rel: 'alternate',
           hrefLang: 'x-default',
-          href: 'https://marin-portfolio1897.vercel.app/restake',
+          href: 'https://marin-iota.vercel.app/restake',
         },
         {
           rel: 'alternate',
           hrefLang: 'en',
-          href: 'https://marin-portfolio1897.vercel.app/restake',
+          href: 'https://marin-iota.vercel.app/restake',
         },
         {
           rel: 'alternate',
           hrefLang: 'hr',
-          href: 'https://marin-portfolio1897.vercel.app/hr/restake',
+          href: 'https://marin-iota.vercel.app/hr/restake',
         },
       ]);
     });
@@ -85,15 +85,15 @@ describe('buildPageMeta', () => {
       // Then
       expect(meta).toContainEqual({
         property: 'og:url',
-        content: 'https://marin-portfolio1897.vercel.app/hr/restake',
+        content: 'https://marin-iota.vercel.app/hr/restake',
       });
       expect(meta).toContainEqual({ property: 'og:locale', content: 'hr_HR' });
       expect(JSON.stringify(breadcrumbs)).toContain(
-        'https://marin-portfolio1897.vercel.app/hr',
+        'https://marin-iota.vercel.app/hr',
       );
       expect(buildPageLinks('/restake', { locale: 'hr' })[0]).toEqual({
         rel: 'canonical',
-        href: 'https://marin-portfolio1897.vercel.app/hr/restake',
+        href: 'https://marin-iota.vercel.app/hr/restake',
       });
     });
   });

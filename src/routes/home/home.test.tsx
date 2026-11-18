@@ -31,7 +31,7 @@ describe('home route', () => {
       expect(descriptors.some((d) => 'script:ld+json' in d)).toBe(true);
       expect(linkDescriptors).toContainEqual({
         rel: 'canonical',
-        href: 'https://marin-portfolio1897.vercel.app/',
+        href: 'https://marin-iota.vercel.app/',
       });
     });
   });

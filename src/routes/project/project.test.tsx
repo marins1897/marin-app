@@ -62,7 +62,7 @@ describe('project route', () => {
       expect(descriptors).toContainEqual({
         tagName: 'link',
         rel: 'canonical',
-        href: 'https://marin-portfolio1897.vercel.app/projects/e-sljedivost',
+        href: 'https://marin-iota.vercel.app/projects/e-sljedivost',
       });
     });
   });

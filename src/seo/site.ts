@@ -5,7 +5,7 @@ import { env } from '../utils/env';
  * URL (canonical, og:url, sitemap). Policy: no trailing slash, except the root.
  */
 export const SITE_URL = (
-  env.siteUrl ?? 'https://marin-portfolio1897.vercel.app'
+  env.siteUrl ?? 'https://marin-iota.vercel.app'
 ).replace(/\/+$/, '');
 export const SITE_NAME = 'Marin Samardžić';
 export const SITE_DESCRIPTION =
