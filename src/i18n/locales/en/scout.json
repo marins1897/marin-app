@@ -20,14 +20,14 @@
       "role": "Frontend redesign and build",
       "link": "Live demo"
     },
-    "ai-agents": {
-      "summary": "Eight Claude-based engineering agents with custom skills for code review, security scans, dependency and performance audits, and release prep.",
+    "ai-assistant": {
+      "summary": "An AI assistant for the Puffer protocol: LLM tool calling over live and on-chain data, RAG pipelines and layered prompt-injection defences, red-teamed.",
       "points": [
-        "Wrote eleven custom skills, from PR review and security checklists to SEO and performance audits and shipping changes.",
-        "Ran every agent in a sandbox with time and turn limits, and backed the system up hourly with a tested restore.",
-        "Agents prepare branches; a person always reviews and pushes."
+        "Built the server end to end in Node.js and TypeScript: 31 tools for live protocol and on-chain data, RAG on PostgreSQL and pgvector, streaming answers, provider fallback and a semantic cache.",
+        "Protected it with layered prompt-injection defences (input guards, cleaned tool results, output filtering) and red-teamed it with promptfoo and garak.",
+        "Built the chat in the Puffer app and the Telegram integration, plus the AI tooling around it: 3DBrain, a shared knowledge graph, and a coding-agent workflow with custom skills and guardrails."
       ],
-      "role": "Designed and built",
+      "role": "Built end to end",
       "link": ""
     },
     "reneverse": {

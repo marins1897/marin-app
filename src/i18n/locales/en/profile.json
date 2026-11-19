@@ -3,7 +3,7 @@
   "title": "About me",
   "about": [
     "I'm a fullstack developer from Sinj, Croatia, with 4+ years building blockchain products end to end: React and TypeScript frontends, Node.js and GraphQL backends, Solidity and Hyperledger contracts, and the AWS infrastructure underneath.",
-    "At Puffer I own frontend engineering across the product suite, from the restaking dApp to the puffer.fi rebrand, and I build the team's AI tooling: MCP services, RAG pipelines and an eight-agent engineering system.",
+    "At Puffer I own frontend engineering across the product suite, from the restaking dApp to the puffer.fi rebrand, and I built the Puffer AI assistant: LLM tool calling over live protocol data, RAG pipelines and layered security.",
     "Off the clock I build for my local football community: a club platform for NK OSK Otok and the Amo na Čanj festival site that ran 130 teams across five sports."
   ],
   "facts": {
@@ -24,7 +24,7 @@
       "place": "Remote · full-time",
       "points": [
         "Owned frontend engineering across the product suite: the restaking dApp that handles deposits and withdrawals, the puffer.fi rebrand and the cross-chain interop app, on an architecture, design system and quality standards I set.",
-        "Built the backend layer to the chain (BFF API, referral services, Telegram bot, a withdrawal-credential verifier gating validator registration) and the AI tooling: MCP services, RAG pipelines and an eight-agent engineering system."
+        "Built the backend layer to the chain (BFF API, referral services, Telegram bot, a withdrawal-credential verifier gating validator registration) and Puffer's AI assistant: LLM tool calling, RAG pipelines and prompt-injection defences, red-teamed with promptfoo and garak."
       ]
     },
     "reneverse": {

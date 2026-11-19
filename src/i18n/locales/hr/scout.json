@@ -20,14 +20,14 @@
       "role": "Redizajn i izrada frontenda",
       "link": "Demo uživo"
     },
-    "ai-agents": {
-      "summary": "Osam inženjerskih agenata na Claudeu, s vlastitim skillovima za code review, sigurnosna skeniranja, audite ovisnosti i performansi te pripremu releasea.",
+    "ai-assistant": {
+      "summary": "AI asistent za Puffer protokol: LLM tool calling nad podacima uživo i s lanca, RAG pretraga i višeslojna zaštita od prompt injectiona, red-teamiran.",
       "points": [
-        "Napisao sam jedanaest vlastitih skillova, od PR reviewa i sigurnosnih checklista do SEO i performance audita te isporuke promjena.",
-        "Svaki agent radi u sandboxu s ograničenjem vremena i broja koraka, a sustav ima satni backup s testiranim vraćanjem.",
-        "Agenti pripremaju branchove; review i push uvijek radi čovjek."
+        "Izgradio sam server od početka do kraja u Node.js-u i TypeScriptu: 31 alat za podatke uživo s protokola i s lanca, RAG na PostgreSQL-u i pgvectoru, streaming odgovora, rezervni LLM provider i semantički cache.",
+        "Zaštitio sam ga višeslojnom obranom od prompt injectiona (ulazni filteri, čišćenje rezultata alata, filtriranje izlaza) i red-teamirao alatima promptfoo i garak.",
+        "Izradio sam chat u Puffer aplikaciji i integraciju s Telegramom, uz AI alate oko njega: 3DBrain, zajednički graf znanja, i workflow s coding agentima, vlastitim skillovima i zaštitama."
       ],
-      "role": "Osmislio i izgradio",
+      "role": "Izgradio od početka do kraja",
       "link": ""
     },
     "reneverse": {

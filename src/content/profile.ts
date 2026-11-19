@@ -20,7 +20,7 @@ export const career: readonly CareerEntry[] = [
       'Node.js',
       'GraphQL',
       'Rust',
-      'MCP',
+      'LLMs',
     ],
   },
   {
@@ -99,11 +99,12 @@ export const skillGroups: readonly SkillGroup[] = [
   {
     id: 'ai',
     items: [
-      'MCP',
-      'Claude API',
+      'LLM tool calling',
       'RAG',
       'Vector embeddings',
-      'Multi-agent systems',
+      'Prompt-injection defence',
+      'Red-teaming',
+      'Claude API',
     ],
   },
   {

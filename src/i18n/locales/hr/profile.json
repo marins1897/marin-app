@@ -3,7 +3,7 @@
   "title": "O meni",
   "about": [
     "Full-stack developer sam iz Sinja, s 4+ godine iskustva u izradi blockchain proizvoda od početka do kraja: React i TypeScript frontendi, Node.js i GraphQL backendi, Solidity i Hyperledger ugovori te AWS infrastruktura ispod svega.",
-    "U Pufferu vodim frontend razvoj kroz cijeli paket proizvoda, od restaking dAppa do rebranda puffer.fi, i gradim AI alate tima: MCP servise, RAG pipelineove i inženjerski sustav od osam agenata.",
+    "U Pufferu vodim frontend razvoj kroz cijeli paket proizvoda, od restaking dAppa do rebranda puffer.fi, i izgradio sam Puffer AI asistenta: LLM tool calling nad podacima s protokola, RAG i višeslojnu zaštitu.",
     "Izvan radnog vremena gradim za svoju lokalnu nogometnu zajednicu: klupsku platformu za NK OSK Otok i stranicu festivala Amo na Čanj, na kojem je nastupilo 130 ekipa u pet sportova."
   ],
   "facts": {
@@ -24,7 +24,7 @@
       "place": "Na daljinu · puno radno vrijeme",
       "points": [
         "Vodio sam frontend razvoj kroz cijeli paket proizvoda: restaking dApp za uplate i povlačenja, rebrand puffer.fi i cross-chain interop aplikaciju, na arhitekturi, dizajn sustavu i standardima kvalitete koje sam postavio.",
-        "Izgradio sam backend sloj prema lancu (BFF API, referral servisi, Telegram bot, verifikator withdrawal credentialsa o kojem ovisi registracija validatora) i AI alate: MCP servise, RAG pipelineove i inženjerski sustav od osam agenata."
+        "Izgradio sam backend sloj prema lancu (BFF API, referral servisi, Telegram bot, verifikator withdrawal credentialsa o kojem ovisi registracija validatora) i Puffer AI asistenta: LLM tool calling, RAG i zaštitu od prompt injectiona, red-teamiranu alatima promptfoo i garak."
       ]
     },
     "reneverse": {

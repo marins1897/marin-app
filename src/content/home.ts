@@ -1,7 +1,7 @@
 import type { PageSeo } from '../seo/page-meta';
 
 /** A highlight in the coach's trophy cabinet; copy in `home.json` under `coach.trophies.<id>`. */
-export type CoachTrophy = 'puffer-fi' | 'ai-agents' | 'amo-na-canj';
+export type CoachTrophy = 'puffer-fi' | 'ai-assistant' | 'amo-na-canj';
 
 /** Home page data. Copy lives in `i18n/locales/<lng>/home.json`. */
 export const homeContent = {
@@ -17,7 +17,7 @@ export const homeContent = {
   } satisfies PageSeo,
   trophies: [
     'puffer-fi',
-    'ai-agents',
+    'ai-assistant',
     'amo-na-canj',
   ] satisfies readonly CoachTrophy[],
 } as const;

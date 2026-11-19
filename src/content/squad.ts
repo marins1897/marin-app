@@ -122,15 +122,23 @@ export const startingXi: readonly SquadPlayer[] = [
     stack: ['React', 'TypeScript', 'viem', 'wagmi', 'SCSS'],
   },
   {
-    slug: 'ai-agents',
+    slug: 'ai-assistant',
     number: '3',
     slot: 'LB',
     stats: [
-      { value: '8', labelKey: 'agents' },
-      { value: '11', labelKey: 'skills' },
-      { value: '0', labelKey: 'pushes' },
+      { value: '31', labelKey: 'tools' },
+      { value: '5', labelKey: 'layers' },
+      { value: '2', labelKey: 'channels' },
     ],
-    stack: ['Claude', 'MCP', 'RAG', 'Node.js', 'PostgreSQL'],
+    stack: [
+      'Node.js',
+      'TypeScript',
+      'RAG',
+      'pgvector',
+      'Redis',
+      'viem',
+      'promptfoo',
+    ],
   },
   {
     slug: 'reneverse',

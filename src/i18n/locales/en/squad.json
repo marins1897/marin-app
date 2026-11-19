@@ -55,16 +55,16 @@
       },
       "imageAlt": "The cross-chain interop app: one intention, both chains, with Supply, Borrow and Flashloan flows"
     },
-    "ai-agents": {
-      "title": "8 AI agents",
-      "club": "Own tooling",
+    "ai-assistant": {
+      "title": "Puffer AI assistant",
+      "club": "Puffer",
       "period": "2026",
-      "about": "Eight Claude-based engineering agents for code review, security scans, audits and release prep. I designed and built them.",
-      "why": "they defend the codebase: review, security scans and audits before anything ships.",
+      "about": "An AI assistant that answers questions about the Puffer protocol with live data. Live in the Telegram bot and in the main app.",
+      "why": "it defends the users: answers with live protocol data and holds the line against prompt injection.",
       "stats": {
-        "agents": "agents",
-        "skills": "skills",
-        "pushes": "unreviewed pushes"
+        "tools": "tools",
+        "layers": "defence layers",
+        "channels": "channels"
       },
       "imageAlt": ""
     },

@@ -58,16 +58,16 @@
       },
       "imageAlt": "Cross-chain interop aplikacija: jedna namjera, oba lanca, s tokovima Supply, Borrow i Flashloan"
     },
-    "ai-agents": {
-      "title": "8 AI agenata",
-      "club": "Vlastiti alati",
+    "ai-assistant": {
+      "title": "Puffer AI asistent",
+      "club": "Puffer",
       "period": "2026",
-      "about": "Osam inženjerskih agenata temeljenih na Claudeu za code review, sigurnosna skeniranja, audite i pripremu releasea. Osmislio sam ih i izgradio.",
-      "why": "brane codebase: review, sigurnosna skeniranja i auditi prije nego išta ode van.",
+      "about": "AI asistent koji odgovara na pitanja o Puffer protokolu podacima uživo. Radi u Telegram botu, a u glavnoj aplikaciji je na stagingu.",
+      "why": "brani korisnike: odgovara podacima uživo s protokola i drži liniju protiv prompt injectiona.",
       "stats": {
-        "agents": "agenata",
-        "skills": "skillova",
-        "pushes": "pushova bez reviewa"
+        "tools": "alata",
+        "layers": "slojeva zaštite",
+        "channels": "kanala"
       },
       "imageAlt": ""
     },

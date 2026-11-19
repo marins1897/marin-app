@@ -52,5 +52,16 @@
       ]
     }
   ],
-  "redirects": []
+  "redirects": [
+    {
+      "source": "/projects/ai-agents",
+      "destination": "/projects/ai-assistant",
+      "permanent": true
+    },
+    {
+      "source": "/hr/projects/ai-agents",
+      "destination": "/hr/projects/ai-assistant",
+      "permanent": true
+    }
+  ]
 }

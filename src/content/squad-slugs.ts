@@ -5,7 +5,7 @@
 export const PLAYER_SLUGS = [
   'e-sljedivost',
   'cross-chain-interop',
-  'ai-agents',
+  'ai-assistant',
   'reneverse',
   'cryptotoday',
   'puffer-app',
