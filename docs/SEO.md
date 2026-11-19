@@ -15,7 +15,7 @@ Lighthouse, Playwright, the SEO contract) reads the prerendered HTML via
 
 1. `src/routes.ts`: `route('restake', 'routes/restake/restake.tsx')`.
 2. `src/content/restake.ts`: typed structure + `seo` (title ≤ 60 chars
-   including " | Puffer", description ≤ 160, optional `ogImage` 1200×630 under
+   including " | Marin Samardžić", description ≤ 160, optional `ogImage` 1200×630 under
    `public/images/`, `noindex` for legal pages).
 3. `src/i18n/locales/en/restake.json` (copy) and register it in
    `src/test/setup.ts`.
@@ -38,7 +38,7 @@ needs its own `-hr` route module so its copy stays out of English bundles.
 
 ## Per page (rendered into the HTML by React Router)
 
-- `<title>`: `%s | Puffer`, home page without suffix (`documentTitle`).
+- `<title>`: `%s | Marin Samardžić`, home page without suffix (`documentTitle`).
 - `meta description`, `robots` (`index, follow` / `noindex, nofollow`),
   `theme-color` (light and dark). `charset` and `viewport` come from
   `root.tsx`'s `Layout`.

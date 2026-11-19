@@ -6,9 +6,9 @@ checked.
 
 ## 1. Static site generation with React Router framework mode (over Next 16, Astro, TanStack Start, and `vite-react-ssg`)
 
-**Context.** Puffer's public sites need prerendered HTML and a complete SEO
-head, on the org's Vite + React stack. The first attempt used
-`vite-react-ssg` on top of the plain SPA template. Its npm README (checked
+**Context.** The portfolio needs prerendered HTML and a complete SEO head on a
+Vite + React stack. The first attempt used `vite-react-ssg` on top of a plain
+SPA setup. Its npm README (checked
 2026-09-22) says: "React Router v7 now has built-in SSG support. If you are
 using React Router v7, we recommend using its official SSG capabilities …
 `vite-react-ssg` will continue to maintain SSG functionality for React Router
@@ -32,7 +32,7 @@ exports are allowed.
 **Decision.** Vitest reuses `vite.config.ts` (aliases, SCSS injection, CSS
 modules) with no transform layer; its `projects` feature hosts the SEO
 contract test (Node) next to the component tests (jsdom). Vitest 5 supports
-Vite 8. Divergence from the org's SPA template is called out in `CLAUDE.md`.
+Vite 8.
 
 ## 3. Head management: React Router `meta`/`links`, not a head library
 
@@ -48,10 +48,9 @@ hreflang); route modules return them from `meta()`/`links()`. `root.tsx`'s
 
 ## 4. Semantic token layer over a raw palette; no design-system package
 
-**Context.** The org's `@pufferfinance/puffer-ui-components` was removed from
-this template (September 2026): it pulled Google Fonts, ~70 legacy variables
-and react-aria into every consumer, and the team plans to grow its own
-component library from `components/ui`.
+**Context.** An external design-system package would pull its own fonts,
+legacy variables and react-aria into the site; the plan is instead to grow a
+small component library from `components/ui`.
 
 **Decision.** `src/styles/palette.scss` holds the raw brand scale;
 `src/styles/tokens.scss` maps it to semantic tokens (`--color-*`, `--space-*`,
@@ -72,8 +71,8 @@ SCSS modules + tokens only. Motion is CSS inside
 `react-aria-components` and sibling ui modules (ESLint `no-restricted-imports`
 enforces it). No `@/…` app modules, no router, no i18n, no network, no
 content. Its only contract with the app is the CSS custom properties in
-`tokens.scss`. This is what lets the folder be extracted into
-`@pufferfinance/ui` later without rewrites.
+`tokens.scss`. This is what lets the folder be extracted into its own package
+later without rewrites.
 
 ## 7. Headless accessibility: react-aria-components for interactive widgets
 
@@ -146,7 +145,7 @@ in imports, which the codebase does not use); `rollup-plugin-visualizer` 7.1
 (2024-08-12) with only a 2.6.0 beta since (2024-09); TanStack Query 5.103.2
 was released 2026-09 and declares `react ^18 || ^19`.
 
-**Decision.** The template ships no data library: a static marketing site has
+**Decision.** The site ships no data library: a static marketing site has
 little client-side data, and `api/` (typed fetchers over `fetch`) + a hook per
 endpoint (`hooks/fetch`) is enough for a "latest posts" widget. When caching,
 revalidation or request de-duplication is actually needed, add **TanStack
@@ -176,9 +175,9 @@ from four directions in a style lab (Gold Foil, Neon Arena, Volt, Prism):
 the accent (darkened to keep white text at ≥ 4.5:1), on near-black cards.
 Buttons, tags and stat tiles are skewed blocks (`--skew`) with hard offset
 shadows; cards are solid with a coloured edge and a stripe texture
-(`ui/panel`). The site has a single dark theme; the template's colour-mode
-context, theme toggle and pre-paint theme script were removed with the consent
-banner and analytics (there are no cookies or third-party scripts).
+(`ui/panel`). The site has a single dark theme: no colour-mode
+context, theme toggle or pre-paint theme script, and no cookies or
+third-party scripts.
 
 ## 14. three.js for the 3D stadium, as its own lazy chunk
 

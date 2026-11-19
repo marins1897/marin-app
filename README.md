@@ -9,9 +9,9 @@ sits under the stadium for anyone in a hurry. In English at `/` and Croatian
 at `/hr`.
 
 React 19 + React Router 8 (prerendered to static HTML) on Vite 8, TypeScript,
-SCSS modules on a semantic token layer, and three.js for the stadium. Built on
-Puffer's frontend template, so it keeps its gates: Vitest, Playwright, axe,
-an SEO contract and bundle budgets. Every word is in the prerendered HTML; the
+SCSS modules on a semantic token layer, and three.js for the stadium, with
+quality gates on every build: Vitest, Playwright, axe, an SEO contract and
+bundle budgets. Every word is in the prerendered HTML; the
 3D scene loads lazily and is skipped without a GPU.
 
 ## Setup
