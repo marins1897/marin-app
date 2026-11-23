@@ -16,16 +16,16 @@ describe('CoachProfile', () => {
 
       // Then
       expect(
-        within(section).getByText(/fullstack developer from Sinj/),
+        within(section).getByText(/full-stack developer from Sinj/),
       ).toBeInTheDocument();
       expect(
         within(section).getByText('07/2025 – Present'),
       ).toBeInTheDocument();
       expect(moves.slice(0, career.length).map((h) => h.textContent)).toEqual([
-        'PufferFullstack Blockchain Developer',
-        'ReneVerseFullstack Blockchain Developer',
+        'PufferFull-stack Developer',
+        'ReneVerseFull-stack Developer',
         'CryptoTodayBackend Developer',
-        'CS Computer SystemsFrontend Blockchain Developer',
+        'CS Computer SystemsFrontend Developer',
         'MPS DataFootball Analyst',
       ]);
       expect(

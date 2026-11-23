@@ -2,8 +2,8 @@
   "kicker": "Coach profile",
   "title": "About me",
   "about": [
-    "I'm a fullstack developer from Sinj, Croatia, with 4+ years building blockchain products end to end: React and TypeScript frontends, Node.js and GraphQL backends, Solidity and Hyperledger contracts, and the AWS infrastructure underneath.",
-    "At Puffer I own frontend engineering across the product suite, from the restaking dApp to the puffer.fi rebrand, and I built the Puffer AI assistant: LLM tool calling over live protocol data, RAG pipelines and layered security.",
+    "I'm a full-stack developer from Sinj, Croatia, with 4+ years of React, TypeScript and Node.js, mostly in small teams where one engineer covers a lot of ground: frontends, APIs, and smart contracts where the product needs them.",
+    "At Puffer I was one of two frontend engineers across five apps, from the restaking dApp to the puffer.fi rebrand, and I built the Puffer AI assistant: LLM tool calling over live protocol data, RAG and layered security.",
     "Off the clock I build for my local football community: a club platform for NK OSK Otok and the Amo na Čanj festival site that ran 130 teams across five sports."
   ],
   "facts": {
@@ -20,16 +20,17 @@
   "career": {
     "puffer": {
       "club": "Puffer",
-      "role": "Fullstack Blockchain Developer",
+      "role": "Full-stack Developer",
       "place": "Remote · full-time",
       "points": [
-        "Owned frontend engineering across the product suite: the restaking dApp that handles deposits and withdrawals, the puffer.fi rebrand and the cross-chain interop app, on an architecture, design system and quality standards I set.",
-        "Built the backend layer to the chain (BFF API, referral services, Telegram bot, a withdrawal-credential verifier gating validator registration) and Puffer's AI assistant: LLM tool calling, RAG pipelines and prompt-injection defences, red-teamed with promptfoo and garak."
+        "Shipped five apps in a two-person frontend team: the restaking dApp for deposits and withdrawals, the puffer.fi rebrand, the blog, the cross-chain interop app and an internal dashboard, on a shared design system tested with Vitest and Playwright.",
+        "Built Puffer's AI assistant, live in the Telegram bot: 31 tools on live data, RAG on pgvector, provider fallback and five layers of prompt-injection defence, red-teamed with promptfoo and garak.",
+        "Built six Node.js services behind the apps, a validator-registration verifier integrated into the protocol team's Rust guardian service, and the CRM the BD team tracks 160+ deals in, with a Telegram bot to read and add deals from chat."
       ]
     },
     "reneverse": {
       "club": "ReneVerse",
-      "role": "Fullstack Blockchain Developer",
+      "role": "Full-stack Developer",
       "place": "Remote · full-time",
       "points": [
         "Built the backend and on-chain infrastructure for Smart Ads, an in-game advertising platform: GraphQL APIs, microservices and event-driven AWS serverless pipelines for high-volume ad events.",
@@ -41,16 +42,15 @@
       "role": "Backend Developer",
       "place": "Remote · part-time",
       "points": [
-        "Built the backend for a community platform for crypto listings and token-based voting: REST APIs, the PostgreSQL schema, voting logic and on-chain deposit and reward flows.",
-        "Ran the AWS infrastructure and automated the data aggregation with scheduled jobs and materialised views."
+        "Part-time, alongside CS Computer Systems: built the backend of a crypto listings and token-voting platform (REST API, PostgreSQL model, voting logic, on-chain reward flows) on AWS."
       ]
     },
     "cs-computer-systems": {
       "club": "CS Computer Systems",
-      "role": "Frontend Blockchain Developer",
+      "role": "Frontend Developer",
       "place": "Zagreb · hybrid",
       "points": [
-        "Built the frontends for two enterprise blockchain platforms used by hospitals and government: MediioChain for healthcare data exchange and e-Sljedivost, Croatia's food traceability portal.",
+        "Sole frontend developer on two production platforms used by hospitals and government: MediioChain for healthcare data exchange and e-Sljedivost, Croatia's food traceability portal.",
         "Delivered React dashboards with real-time d3.js analytics, a React Native app, and chaincode in Go for Hyperledger Fabric."
       ]
     },
